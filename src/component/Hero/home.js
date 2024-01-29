@@ -1,6 +1,6 @@
 import React from 'react'
 import "./home.css"
-import hero from "../pic/logo.jpeg"
+import hero from "../pic/IMG_8677.jpg"
 import { Typewriter } from 'react-simple-typewriter'
 
 const Home = () => {
