@@ -1,0 +1,23 @@
+.Skills .box {
+    padding: 50px;
+}
+.Skills .box h2 {
+    margin: 20px 0 20px 0;
+}
+.Skills .box p {
+    word-spacing: 2px;
+    transition: 0.5s;
+}
+.Skills .box i {
+    font-size: 30px;
+    margin-top: 20px;
+    transition: 0.5s;
+    opacity: 0;
+}
+.Skills .box:hover p {
+    color: white;
+}
+.Skills .box:hover i {
+    color: white;
+    opacity: 1;
+}
