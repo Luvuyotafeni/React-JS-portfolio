@@ -5,6 +5,7 @@ import Home from "./component/Hero/home"
 import About from './component/About/About'
 import Skills from './component/Skills/Skills'
 
+
 const App = () => {
   return (
     <>

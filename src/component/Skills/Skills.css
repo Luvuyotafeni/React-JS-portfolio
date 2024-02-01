@@ -1,19 +1,16 @@
 .Skills .box {
-    padding: 50px;
+    padding: 20px;
+    size: 20%;
 }
 .Skills .box h2 {
     margin: 20px 0 20px 0;
 }
 .Skills .box p {
-    word-spacing: 2px;
+    word-spacing: 1px;
     transition: 0.5s;
+    font-size: smaller;
 }
-.Skills .box i {
-    font-size: 30px;
-    margin-top: 20px;
-    transition: 0.5s;
-    opacity: 0;
-}
+
 .Skills .box:hover p {
     color: white;
 }
@@ -21,3 +18,14 @@
     color: white;
     opacity: 1;
 }
+.Skills .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+  }
+  
+  .Skills .skill-box {
+    width: 30%; 
+    margin: 10px; 
+    box-sizing: border-box;
+  }

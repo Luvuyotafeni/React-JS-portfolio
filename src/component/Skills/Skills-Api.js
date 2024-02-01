@@ -1,7 +1,7 @@
 const data = [
     {
       id: 1,
-      image: "http://www.w3.org/2000/svg",
+      image: "./icons8-html-5-48.png",
       title: "HTML",
       desc: "Is the standard markup language used to create and design documents on the World Wide Web.",
     },

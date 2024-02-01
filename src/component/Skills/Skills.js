@@ -6,18 +6,22 @@ import "./Skills.css"
 const Skills = () => {
   return (
     <>
-        <section className='Skills top'  id='Skills'>
-            <div className='container'>
-                <div className='heading'>
-                    <h1>SKILLS</h1>
-                </div>
-                <div className='content grid'>
-                    {data.map((val, index) => {
-                    return <Card key={index} image={val.image} title={val.title} desc={val.desc} />
-                     })}
+      <section className='Skills top' id='Skills'>
+        <div className='container'>
+          <div className='heading'>
+            <h1>SKILLS</h1>
           </div>
-            </div>
-        </section>
+          <div className='skills-container'>
+            {data.map((val, index) => {
+              return (
+                <div className='skill-box' key={index}>
+                  <Card image={val.image} title={val.title} desc={val.desc} />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
     </>
   )
 }
