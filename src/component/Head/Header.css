@@ -107,9 +107,12 @@ li i.bx-toggle-right {
       display: none;
   }
   }
-    
+  .toggle {
+    display: none;
+  }
 .logo {
-    max-width: 100px; /* Adjust the value based on your preference */
+    max-width: 60px; /* Adjust the value based on your preference */
+
   }
 
 .demo{

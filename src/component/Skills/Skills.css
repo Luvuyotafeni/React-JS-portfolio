@@ -22,10 +22,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; 
-  }
+}
   
-  .Skills .skill-box {
+.Skills .skill-box {
     width: 30%; 
     margin: 10px; 
     box-sizing: border-box;
-  }
+}
+.Skills .heading{
+    text-align: center;
+}
