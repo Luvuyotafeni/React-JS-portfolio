@@ -5,6 +5,7 @@ import Home from "./component/Hero/home"
 import About from './component/About/About'
 import Skills from './component/Skills/Skills'
 import Project from './component/Projects/projects'
+import Contact from './component/contact/contact'
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <About />
       <Skills />
       <Project/>
+      <Contact/>
     </>
   )
   

@@ -1,10 +1,16 @@
 .projects .box {
+    position: relative;
     padding: 20px;
     size: 20%;
-}
-.projects .box h2 {
-    margin: 20px 0 20px 0;
-}
+  }
+  .projects .box h2,
+  .projects .box img {
+    transition: opacity 0.5s;
+  }
+  .projects .box:hover .project-title,
+  .projects .box:hover .project-image {
+    opacity: 0;
+  }  
 .projects .box p {
     word-spacing: 1px;
     transition: 0.5s;
@@ -16,11 +22,10 @@
     color: black; /* Change the color when hovered */
   }
   
-
-.projects .box:hover i {
-    color: white;
-    opacity: 1;
+  .projects .heading h2{
+    font-size: 40px;
 }
+
 .projects .projects-container {
     display: flex;
     flex-wrap: wrap;

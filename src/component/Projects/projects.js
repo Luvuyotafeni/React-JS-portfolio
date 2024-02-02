@@ -12,7 +12,7 @@ const Project = () => {
       <section className='projects top' id='projects'>
         <div className='container'>
           <div className='heading'>
-            <h1>Projects</h1>
+            <h2>PROJECTS</h2>
           </div>
           <div className='projects-container'>
             {data.map((val, index) => {

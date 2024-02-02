@@ -9,7 +9,7 @@ const Skills = () => {
       <section className='Skills top' id='Skills'>
         <div className='container'>
           <div className='heading'>
-            <h1>SKILLS</h1>
+            <h2>SKILLS</h2>
           </div>
           <div className='skills-container'>
             {data.map((val, index) => {

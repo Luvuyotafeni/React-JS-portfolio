@@ -5,6 +5,9 @@
 .Skills .box h2 {
     margin: 20px 0 20px 0;
 }
+.Skills .heading h2{
+    font-size: 40px;
+}
 .Skills .box p {
     word-spacing: 1px;
     transition: 0.5s;
