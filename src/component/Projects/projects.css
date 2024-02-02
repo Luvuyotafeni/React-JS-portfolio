@@ -1,0 +1,37 @@
+.projects .box {
+    padding: 20px;
+    size: 20%;
+}
+.projects .box h2 {
+    margin: 20px 0 20px 0;
+}
+.projects .box p {
+    word-spacing: 1px;
+    transition: 0.5s;
+    font-size: smaller;
+    display: none; /* Hide desc by default */
+}
+.projects .box.hovered p {
+    display: block; /* Show desc when hovered */
+    color: black; /* Change the color when hovered */
+  }
+  
+
+.projects .box:hover i {
+    color: white;
+    opacity: 1;
+}
+.projects .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+  
+.projects .projects-box {
+    width: 30%; 
+    margin: 10px; 
+    box-sizing: border-box;
+}
+.projects .heading{
+    text-align: center;
+}

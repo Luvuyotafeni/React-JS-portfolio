@@ -49,13 +49,14 @@ header ul li a:hover{
 
 }
 
-li i.bx-toggle-right {
-  font-size: 40px; /* You can adjust this value to your preference */
-}
+
 @media (max-width: 768px) {
     header ul {
       padding-top: 30px;
     }
+    li i.bx-toggle-right {
+  font-size: 40px; /* You can adjust this value to your preference */
+}
     .nav-links-mobile {
       position: absolute;
       display: block;
@@ -117,4 +118,20 @@ li i.bx-toggle-right {
 
 .demo{
     height: 200vh;
+}
+@media (max-width: 768px) {
+  header ul {
+    padding-top: 30px;
+  }
+
+  .toggle {
+    display: block; /* Set to block within the media query */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
 }
