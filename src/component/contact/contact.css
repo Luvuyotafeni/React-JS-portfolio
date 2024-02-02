@@ -9,6 +9,7 @@
 }
   .contact .box {
     padding: 30px;
+    border: 1px solid #787878;
   }
   .contact .details h2 {
     margin: 20px 0 20px 0;
@@ -32,13 +33,16 @@
   }
   .contact input {
     margin-top: 10px;
+    border-radius: 10%;
   }
   .contact .right button {
     width: 100%;
-    color: #ff014f;
+    color: #787878;
+    border: 1px solid #787878;
+    height: 50px;
   }
   .contact .right button:hover {
-    color: white;
+    color: black;
   }
   .contact .right button i {
     margin-left: 10px;

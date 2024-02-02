@@ -78,11 +78,6 @@ button{
 .heading {
   margin: 50px 0 50px 0;
 }
-.heading h4 {
-  color: #ff014f;
-  letter-spacing: 2px;
-  font-weight: 400;
-}
 .heading h1 {
   font-size: 60px;
   color: #3c3e41;
@@ -100,9 +95,6 @@ p {
 }
 .text-center {
   text-align: center;
-}
-.primary_color {
-  color: #ff014f;
 }
 textarea,
 input {

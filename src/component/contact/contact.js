@@ -9,27 +9,27 @@ const contact = () => {
                 <div className='heading text-center'>
                     <h2>CONTACT ME</h2>
                 </div>
-                <div className='right box_shodow'>
+                <div className='right box_shadow'>
                         <form >
                             <div className='f_flex'>
                                 <div className='input row'>
                                     <span>NAME</span>
-                                    <input type='text' name='fullname'/>
+                                    <input type='text' name='fullname' required/>
                                 </div>
                                 <div className='input row'>
                                     <span>SURNAME </span>
-                                    <input type='text' name='surname'/>
+                                    <input type='text' name='surname' required/>
                                 </div>
                             </div>
                             <div className='input'>
                                 <span>EMAIL </span>
-                                <input type='email' name='email' />
+                                <input type='email' name='email' required/>
                             </div>
                             <div className='input'>
                                 <span>YOUR MESSAGE </span>
-                                <textarea cols='30' rows='10' name='message'></textarea>
+                                <textarea cols='30' rows='10' name='message' required></textarea>
                             </div>
-                            <button className='btn_shadow'>
+                            <button>
                                 SEND MESSAGE 
                             </button>
                         </form>
