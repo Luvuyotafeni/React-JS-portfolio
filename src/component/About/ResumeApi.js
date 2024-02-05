@@ -4,7 +4,7 @@ const ResumeApi = [
     category: "education",
     year: "Boston City College and Business Campus(2019 - 2021)",
     title: "Diploma in Systems Development",
-    desc: "The education should be very interactual. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
+    desc: "This was a 3 year course that I took after doing information technology at high school, this focused more on the software development side of studying JAVA, Android ethical hacking and business management",
   },
   
   {
@@ -19,14 +19,14 @@ const ResumeApi = [
     category: "experience",
     year: "CapaCiti  (2023 July - 2024 January) ",
     title: "Software Development Intern",
-    desc: "I was an intern, I was working working with frontend, backend development technologies. The technologies I was working with were, HTML, JAVASCRIPT, CSS, Python, JAVA, SQL and I was under supervision also reporting to my candidate success manager. ",
+    desc: "I was an intern, I was  working with frontend, backend development technologies. The technologies I was working with were, HTML, JAVASCRIPT, CSS, Python, JAVA, SQL and I was under supervision also reporting to my candidate success manager. ",
   },
   {
     id: 6,
     category: "experience",
     year: "Younglings Africa (2024 January - Current) ",
     title: "Junior Sofware Developer",
-    desc: "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante.",
+    desc: "I am Junior software developer, working with front-end, back-end development technologies. The technologies I was working with were,React-js CSS, building dynamic websites",
   },
 ]
 
