@@ -27,6 +27,8 @@ body{
 a{
   text-decoration: none;
   color: black;
+  width: 50px;
+  height: 50px;
 }
 li{
   list-style: none;
@@ -59,11 +61,7 @@ button{
   background: linear-gradient(145deg,#e2e8e2, #ffffff);
   box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
 }
-.btn_shadow:hover{
-  background: #ff041f;
-  color: white;
-  transform: translateY(-10px);
-}
+
 .row,
 .left,
 .right{

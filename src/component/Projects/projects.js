@@ -26,6 +26,7 @@ const Project = () => {
                   <Card
                     image={val.image}
                     title={val.title}
+                    github={val.github}
                     desc={val.desc}
                     isHovered={hoveredId === val.id}
                   />

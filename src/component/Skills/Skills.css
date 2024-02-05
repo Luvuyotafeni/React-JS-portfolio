@@ -29,9 +29,17 @@
   
 .Skills .skill-box {
     width: 30%; 
+    height: fit-content;
     margin: 10px; 
     box-sizing: border-box;
 }
+
+.btn_shadow:hover{
+  background: #ff041f;
+  color: white;
+  transform: translateY(-10px);
+}
+
 .Skills .heading{
     text-align: center;
 }
