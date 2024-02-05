@@ -28,10 +28,10 @@ const Home = () => {
                              <button>HIRE ME</button>
                             <div className='button'>
                                 <button className='btn_shadow'>
-                                    <i class='bx bxl-linkedin-square'></i>
+                                    <a href='https://www.linkedin.com/in/luvuyo-tafeni-357998230/'><i class='bx bxl-linkedin-square'></i></a>
                                 </button>
                                 <button className='btn_shadow'>
-                                    <i class='bx bxl-github' ></i>
+                                    <a href='https://github.com/Luvuyotafeni?tab=repositories'> <i class='bx bxl-github' ></i></a>
                                 </button>
                             </div>
                         </div>

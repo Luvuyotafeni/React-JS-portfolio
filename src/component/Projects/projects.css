@@ -3,6 +3,10 @@
     padding: 20px;
     size: 20%;
   }
+  .projects .box:hover {
+    background-color: transparent;
+  }
+  
   .projects .box h2,
   .projects .box img {
     transition: opacity 0.5s;
@@ -15,13 +19,26 @@
     word-spacing: 1px;
     transition: 0.5s;
     font-size: smaller;
-    display: none; /* Hide desc by default */
+    display: none; 
     
+}
+.projects .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9); /* Adjust the alpha value for transparency */
+  z-index: 1;
+  display: none;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .projects .box.hovered p {
-    display: block; /* Show desc when hovered */
-    color: black; /* Change the color when hovered */
+    display: block;
+    color: black;
+    font-size: 20px;
   }
   
   .projects .heading h2{

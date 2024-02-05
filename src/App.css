@@ -78,10 +78,10 @@ button{
 }
 .heading h1 {
   font-size: 60px;
-  color: #3c3e41;
+  color: black;
 }
 h1 {
-  color: #3c3e41;
+  color: black;
 }
 .grid {
   display: grid;
@@ -89,7 +89,7 @@ h1 {
   grid-gap: 35px;
 }
 p {
-  color: #3c3e41;
+  color: ;
 }
 .text-center {
   text-align: center;
