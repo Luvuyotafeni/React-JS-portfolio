@@ -1,6 +1,10 @@
 .About .heading h2{
     font-size: 40px;
 }
+.About h4{
+    margin-left: 200px;
+    font-size: 20px;
+}
 .About .content{
     min-width:85%;
     margin: auto;

@@ -50,6 +50,9 @@ header ul li a:hover{
     box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75)
 
 }
+.mode{
+  font-size: 40px;
+}
 
 
 @media (max-width: 768px) {

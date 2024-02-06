@@ -11,8 +11,14 @@ const Header = () => {
 
     // toggle menu
     const [Mobile, setMobile]= useState(false)
+    const handleHomeClick = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
   return (
-    <div>
+    <div id='nav'>
         <header className='header'>
             <div className='container d_flex'>
                 <div className='logo'>
@@ -21,12 +27,14 @@ const Header = () => {
                 <div className='navLink'>
                     {/*<ul className='link f_flex uppercase'>*/}
                     <ul className={Mobile ? "nav-links-mobile" : "link f_flex uppercase"} onClick={()=> setMobile(false)}>
-                        <li><a href='#home'> Home</a></li>
+                        <li><a onClick={handleHomeClick}> Home</a></li>
                         <li><a href='#about'> About</a></li>
                         <li><a href='#Skills'> Skills</a></li>
                         <li><a href='#projects'> Project</a></li>
                         <li><a href='#contact'> Contact Me</a></li>
-                        <li><i class='bx bx-toggle-right'></i></li>
+                        <li>
+                           <button className='mode' id='mode'> <i class='bx bx-toggle-right'></i></button>
+                        </li>
                     </ul>
                     <button className='toggle' onClick={() => setMobile(!Mobile)}>
                         {Mobile ? 

@@ -9,9 +9,9 @@ const Card = (props) => {
         <h2 className={`project-title ${props.isHovered ? 'hidden' : ''}`}>{props.title}</h2>
         
         {props.isHovered && (
-
-            <p className="overlay">{props.desc} <a className="git">{props.github}</a></p>
-          
+          <>
+            <p className="overlay">{props.desc} <br></br><a className="git">{props.github}</a></p>
+          </>
         )}
       </div>
     </>

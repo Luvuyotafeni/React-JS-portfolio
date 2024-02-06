@@ -88,9 +88,7 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 35px;
 }
-p {
-  color: ;
-}
+
 .text-center {
   text-align: center;
 }
