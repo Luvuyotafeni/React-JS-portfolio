@@ -34,7 +34,7 @@ const contact = () => {
                                 <span>YOUR MESSAGE </span>
                                 <textarea cols='30' rows='10' name='message' required></textarea>
                             </div>
-                            <ReCAPTCHA
+                            <ReCAPTCHA className='captcha'
                                 sitekey="6LfHsGgpAAAAAOh5a9TZmzWFFORTrp7yXqUf0Oza"
                                 onChange={onChange}
                             />
