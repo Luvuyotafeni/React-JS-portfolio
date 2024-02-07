@@ -1,6 +1,7 @@
 import React from 'react'
 import "./home.css"
 import hero from "../pic/IMG_8677.jpg"
+import resume from "./Luvuyos Resume.pdf"
 import { Typewriter } from 'react-simple-typewriter'
 
 const Home = () => {
@@ -25,7 +26,8 @@ const Home = () => {
                     
                     <div className='hero_btn d_flex'>
                         <div className='col_1'>
-                             <button>HIRE ME</button>
+                             <button className='hire btn_shadow'>
+                                <a href={resume}>HIRE ME</a></button>
                             <div className='button'>
                                 <button className='btn_shadow'>
                                     <a href='https://www.linkedin.com/in/luvuyo-tafeni-357998230/'><i class='bx bxl-linkedin-square'></i></a>
