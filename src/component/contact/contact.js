@@ -1,23 +1,26 @@
 import React, { useState } from 'react';
 import "./contact.css";
 import ReCAPTCHA from "react-google-recaptcha";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
-        fullname: '',
+        name: '',
         surname: '',
         email: '',
         message: ''
     });
 
     const [formErrors, setFormErrors] = useState({
-        fullname: '',
+        name: '',
         surname: '',
         email: '',
         message: ''
     });
 
     const [recaptchaCompleted, setRecaptchaCompleted] = useState(false);
+
+    const formRef = React.createRef();  // Create a ref for the form
 
     const onChange = (e) => {
         const { name, value } = e.target;
@@ -36,13 +39,53 @@ const Contact = () => {
         setRecaptchaCompleted(!!value);
     };
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        if (validateForm()) {
+            // Perform form submission logic here
+
+            // Correct the params for emailjs.sendForm
+            let params = {
+                to_name:"luvuyo",
+                name: formData.fullname,
+                email: formData.email,
+                surname: formData.surname,
+                message: formData.message,
+            };
+
+            emailjs.init("1kEnnpNHMM8fqhFJP");
+            emailjs.sendForm("service_nyt6frj", "template_0tjklyi", formRef.current, params)
+                .then(
+                    function (response) {
+                        console.log("Email sent successfully:", response);
+                        alert("Email sent successfully!");
+                    },
+                    function (error) {
+                        console.log("Email sending failed:", error);
+                        alert("Email sending failed. Please try again later.");
+                    }
+                );
+
+            // You may want to clear the form after submission
+            setFormData({
+                name: '',
+                surname: '',
+                email: '',
+                message: ''
+            });
+        } else {
+            console.log('Form validation failed');
+        }
+    };
+
     const validateForm = () => {
         let valid = true;
         const newErrors = { ...formErrors };
 
         // Validate fullname
-        if (!formData.fullname.trim()) {
-            newErrors.fullname = 'Fullname is required';
+        if (!formData.name.trim()) {
+            newErrors.name = 'Fullname is required';
             valid = false;
         }
 
@@ -72,20 +115,7 @@ const Contact = () => {
         }
 
         setFormErrors(newErrors);
-
         return valid;
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-
-        if (validateForm()) {
-            // Perform form submission logic here
-            console.log('Form submitted:', formData);
-            alert('Form submitted successfully!');
-        } else {
-            console.log('Form validation failed');
-        }
     };
 
     return (
@@ -97,27 +127,27 @@ const Contact = () => {
                     </div>
                     <div className='contact d_flex'>
                         <div className='right box_shadow'>
-                            <form onSubmit={handleSubmit}>
+                            <form ref={formRef} onSubmit={handleSubmit}>
                                 <div className='f_flex'>
                                     <div className='input row'>
                                         <span>NAME</span>
-                                        <input type='text' name='fullname' value={formData.fullname} onChange={onChange} required />
+                                        <input type='text' name='name' value={formData.name} onChange={onChange} />
                                         <div className='error'>{formErrors.fullname}</div>
                                     </div>
                                     <div className='input row'>
                                         <span>SURNAME </span>
-                                        <input type='text' name='surname' value={formData.surname} onChange={onChange} required />
+                                        <input type='text' name='surname' value={formData.surname} onChange={onChange} />
                                         <div className='error'>{formErrors.surname}</div>
                                     </div>
                                 </div>
                                 <div className='input'>
                                     <span>EMAIL </span>
-                                    <input type='email' name='email' value={formData.email} onChange={onChange} required />
+                                    <input type='email' name='email' value={formData.email} onChange={onChange} />
                                     <div className='error'>{formErrors.email}</div>
                                 </div>
                                 <div className='input'>
                                     <span>YOUR MESSAGE </span>
-                                    <textarea cols='30' rows='10' name='message' value={formData.message} onChange={onChange} required></textarea>
+                                    <textarea cols='30' rows='10' name='message' value={formData.message} onChange={onChange}></textarea>
                                     <div className='error'>{formErrors.message}</div>
                                 </div>
                                 <ReCAPTCHA
