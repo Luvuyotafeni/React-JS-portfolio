@@ -47,3 +47,36 @@
     align-content: center;
     margin: 30px;
 }
+/* Media Queries for Tablet */
+@media only screen and (max-width: 768px) {
+    .Skills .skill-box {
+      width: 48%; /* Adjust the width for tablet screens */
+    }
+  }
+
+/* Media Queries for Mobile */
+@media only screen and (max-width: 480px) {
+    .Skills .skill-box {
+      width: 100%; /* Adjust the width for mobile screens */
+    }
+    
+    .Skills .box {
+      padding: 15px;
+    }
+  
+    .Skills .box h2 {
+      margin: 15px 0;
+    }
+  
+    .Skills .heading h2 {
+      font-size: 30px;
+    }
+  
+    .Skills .box p {
+      font-size: small;
+    }
+  
+    .skills-title {
+      margin: 15px;
+    }
+}

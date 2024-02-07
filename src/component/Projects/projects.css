@@ -63,5 +63,37 @@
   margin: 110px;
   font-size: 50px;
 }
+/* Media Queries for Mobile */
+@media only screen and (max-width: 480px) {
+  .projects .box {
+    size: 80%; /* Adjust the size as needed */
+  }
+
+  .projects .projects-box {
+    width: 80%; /* Adjust the width as needed */
+  }
+
+  .projects .git {
+    margin: 10px; /* Adjust the margin as needed */
+    font-size: 20px; /* Adjust the font size as needed */
+  }
+}
+@media only screen and (max-width: 768px) {
+  .projects .box {
+    size: 50%; /* Adjust the size as needed */
+  }
+
+  .projects .projects-box {
+    width: 55%; /* Adjust the width as needed */
+  }
+
+  .projects .git {
+    margin: 30px; /* Adjust the margin as needed */
+    font-size: 30px; /* Adjust the font size as needed */
+  }
+  .projects img{
+    width: 40%;
+  }
+}
 
 

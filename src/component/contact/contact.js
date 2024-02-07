@@ -6,14 +6,14 @@ import emailjs from '@emailjs/browser';
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
-        surname: '',
+        subject: '',
         email: '',
         message: ''
     });
 
     const [formErrors, setFormErrors] = useState({
         name: '',
-        surname: '',
+        subject: '',
         email: '',
         message: ''
     });
@@ -50,7 +50,7 @@ const Contact = () => {
                 to_name:"luvuyo",
                 name: formData.fullname,
                 email: formData.email,
-                surname: formData.surname,
+                subject: formData.subject,
                 message: formData.message,
             };
 
@@ -70,7 +70,7 @@ const Contact = () => {
             // You may want to clear the form after submission
             setFormData({
                 name: '',
-                surname: '',
+                subject: '',
                 email: '',
                 message: ''
             });
@@ -90,8 +90,8 @@ const Contact = () => {
         }
 
         // Validate surname
-        if (!formData.surname.trim()) {
-            newErrors.surname = 'Surname is required';
+        if (!formData.subject.trim()) {
+            newErrors.subject = 'Surname is required';
             valid = false;
         }
 
@@ -135,8 +135,8 @@ const Contact = () => {
                                         <div className='error'>{formErrors.fullname}</div>
                                     </div>
                                     <div className='input row'>
-                                        <span>SURNAME </span>
-                                        <input type='text' name='surname' value={formData.surname} onChange={onChange} />
+                                        <span>SUBJECT </span>
+                                        <input type='text' name='subject' value={formData.subject} onChange={onChange} />
                                         <div className='error'>{formErrors.surname}</div>
                                     </div>
                                 </div>
