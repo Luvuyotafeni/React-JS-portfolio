@@ -7,7 +7,7 @@ const footer = () => {
    <    footer>
             <div className='container text-center '>
                 <p>
-                    copyrights 2023 luvuyo Tafeni.
+                    copyrights 2023 @ Luvuyo Tafeni.
                 </p>
             </div>
         </footer>
