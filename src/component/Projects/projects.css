@@ -66,33 +66,44 @@
 /* Media Queries for Mobile */
 @media only screen and (max-width: 480px) {
   .projects .box {
-    size: 80%; /* Adjust the size as needed */
+    size: 80%;
   }
 
   .projects .projects-box {
-    width: 80%; /* Adjust the width as needed */
+    width: 80%;
   }
 
   .projects .git {
-    margin: 10px; /* Adjust the margin as needed */
-    font-size: 20px; /* Adjust the font size as needed */
+    margin: 10px; 
+    font-size: 20px; 
+  }
+  .projects .overlay{
+    font-size: x-small;
+    padding: 10px;
+  }
+  .projects h2{
+    font-size: x-small;
   }
 }
 @media only screen and (max-width: 768px) {
   .projects .box {
-    size: 50%; /* Adjust the size as needed */
+    size: 50%;
   }
 
   .projects .projects-box {
-    width: 45%; /* Adjust the width as needed */
+    width: 45%; 
+  }
+  .projects .overlay{
+    font-size: x-small;
+    padding: 10px;
   }
 
   .projects .git {
-    margin: 30px; /* Adjust the margin as needed */
-    font-size: 30px; /* Adjust the font size as needed */
+    margin: 30px; 
+    font-size: 30px; 
   }
   .projects img{
-    width: 40%;
+    width: 90%;
   }
 }
 

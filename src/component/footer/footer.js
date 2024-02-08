@@ -1,0 +1,18 @@
+import React from 'react'
+
+
+const footer = () => {
+  return (
+   <>
+   <    footer>
+            <div className='container text-center '>
+                <p>
+                    copyrights 2023 luvuyo Tafeni.
+                </p>
+            </div>
+        </footer>
+   </>
+  )
+}
+
+export default footer

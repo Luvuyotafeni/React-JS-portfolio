@@ -30,6 +30,8 @@
 
 .contact button {
   margin-right: 10px;
+  border-style: double 
+  ;
 }
 
 .contact .right {
@@ -75,136 +77,148 @@
 
 /* Media Queries for Mobile */
 @media only screen and (max-width: 480px) {
-  .contact .left,
-  .contact .right {
-      width: 100%;
+  .contact .d_flex {
+    flex-direction: column;
+    align-items: center;
   }
 
   .contact .left,
   .contact .right {
-      padding: 10px;
+    order: 1; /* Change the order */
+  }
+
+  .contact .left,
+  .contact .right {
+    padding: 15px;
   }
 
   .contact .heading h2 {
-      font-size: 25px;
+    font-size: 25px;
   }
 
   .contact .box {
-      padding: 12px;
+    padding: 15px;
   }
 
   .contact .details h2 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .contact .details p {
-      font-size: 12px;
+    font-size: 12px;
   }
 
   .contact .button {
-      margin-top: 10px;
+    margin-top: 10px;
+    border-style: double;
   }
 
   .contact button {
-      margin-right: 5px;
+    margin-right: 5px;
   }
 
   .contact .right button {
-      height: 35px;
+    height: 35px;
   }
 
   .contact .input span {
-      font-size: 10px;
+    font-size: 10px;
   }
 
   .contact input {
-      margin-top: 5px;
+    margin-top: 5px;
   }
 
   .mail,
   .phone {
-      font-size: small;
-      padding: 15px;
+    font-size: small;
+    padding: 15px;
   }
 
   .bxs-phone,
   .bxs-envelope {
-      font-size: 30px;
+    font-size: 50px;
   }
 
   .con {
-      margin-top: 40px;
+    margin-top: 60px;
   }
 
   .captcha {
-      margin: 2px;
+    margin: 3px;
   }
 }
 
 /* Media Queries for Tablet */
 @media only screen and (max-width: 768px) {
-  .contact .left,
-  .contact .right {
-      width: 100%;
+  .contact .d_flex {
+    flex-direction: column;
+    align-items: center;
   }
 
   .contact .left,
   .contact .right {
-      padding: 15px;
+    order: 1; /* Change the order */
+  }
+
+  .contact .left,
+  .contact .right {
+    padding: 20px;
   }
 
   .contact .heading h2 {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .contact .box {
-      padding: 15px;
+    padding: 20px;
   }
 
   .contact .details h2 {
-      font-size: 25px;
+    font-size: 25px;
   }
 
   .contact .details p {
-      font-size: 14px;
+    font-size: 15px;
   }
 
   .contact .button {
-      margin-top: 12px;
+    margin-top: 15px;
   }
 
   .contact button {
-      margin-right: 8px;
+    margin-right: 10px;
+    border-style: double;
   }
 
   .contact .right button {
-      height: 35px;
+    height: 40px;
   }
 
   .contact .input span {
-      font-size: 11px;
+    font-size: 12px;
   }
 
   .contact input {
-      margin-top: 6px;
+    margin-top: 8px;
   }
 
   .mail,
   .phone {
-      font-size: small;
-      padding: 15px;
+    font-size: medium;
+    padding: 20px;
   }
 
   .bxs-phone,
   .bxs-envelope {
-      font-size: 40px;
+    font-size: 60px;
   }
 
   .con {
-      margin-top: 50px;
+    margin-top: 80px;
   }
 
   .captcha {
-      margin: 3px;
+    margin: 5px;
   }
 }

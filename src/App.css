@@ -109,3 +109,9 @@ input {
   max-width: 50px; /* Adjust the value based on your preference */
   border-radius: 30px;
 }
+footer{
+  margin: 20% 0 10% 0;
+  color: white;
+  background-color: #000;
+  padding: 0%;
+}
