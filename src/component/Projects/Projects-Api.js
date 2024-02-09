@@ -3,7 +3,7 @@ import bank from "./pics/Bank app_resized.png"
 import versatile from "./pics/Versatile_resized.png"
 import portfolio from "./pics/portfolio_resized.png"
 import rdp from "./pics/WhatsApp Image 2024-02-02 at 08.24.49_resized_resized_resized.jpeg"
-
+/* exported as data that will be used and showed at each project container*/
 const data = [
     {
       id: 1,

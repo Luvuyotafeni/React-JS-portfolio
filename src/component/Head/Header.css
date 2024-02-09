@@ -1,142 +1,142 @@
 header{
-    height: 10vh;
-    line-height: 10vh;
+  height: 10vh;
+  line-height: 10vh;
 }
 header .container{
-    padding-top: 15px;
+  padding-top: 15px;
 }
 header ul li{
-    margin-left : 30px;
-    font-size: 3rem;
+  margin-left : 30px;
+  font-size: 3rem;
 }
 header ul li a{
-    transition: 0.5s;
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin-left: 20px;
+  transition: 0.5s;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-left: 20px;
 
 }
 header ul li a:hover{
-    color:#ff014f;
+  color:#ff014f;
 
 }
 .home-btn{
-    padding: 18px 25px;
-    border-radius: 6px;
-    transition: 0.3s all ease;
-    cursor:pointer;
-    height: fit-content;
-    color: #ff014f;
+  padding: 18px 25px;
+  border-radius: 6px;
+  transition: 0.3s all ease;
+  cursor:pointer;
+  height: fit-content;
+  color: #ff014f;
 }
 .home-btn{
-    background:linear-gradient(145deg,#e2eBec,#ffffff);
-    box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
+  background:linear-gradient(145deg,#e2eBec,#ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
 }
 .home-btn:hover{
-    background-color: #ff014f;
-    color: white;
+  background-color: #ff014f;
+  color: white;
 }
 .open{
-    display: none;
+  display: none;
 }
 .header.active{
-    height:12vh;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-    background-color: #ecf0f3;
-    box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75)
+  height:12vh;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #ecf0f3;
+  box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75)
 
 }
 .mode{
-  font-size: 40px;
+font-size: 40px;
 }
 
 
-@media (max-width: 768px) {
-    header ul {
-      padding-top: 30px;
-    }
-    li i.bx-toggle-right {
-  font-size: 40px; /* You can adjust this value to your preference */
-}
-    .nav-links-mobile {
-      position: absolute;
-      display: block;
-      list-style: none;
-      box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-      left: 0;
-      top: 0;
-      transition: all 0.5s ease-in-out;
-      width: 60%;
-      height: 100vh;
-      background-color: white;
-      z-index: 888;
-    }
-    header ul li {
-      width: 100%;
-      transition: all 0.5s ease-in-out;
-      text-transform: uppercase;
-      line-height: 70px;
-    }
-    header .link {
-      display: none;
-    }
-    .close,
-    .open {
-      position: absolute;
-      top: 35px;
-      right: 20px;
-      color: #ff014f;
-      display: block;
-      font-size: 25px;
-      z-index: 999;
-    }
-    .close {
-      right: 45%;
-    }
-    .close.home-btn {
-      background: linear-gradient(145deg, #e2e8ec, #ffffff);
-      color: #ff014f;
-      border-radius: 50%;
-      padding: 0;
-      width: 60px;
-      height: 60px;
-      line-height: 60px;
-    }
-    .header.active {
-      height: 10vh;
-    }
-    .toggle {
-      display: none;
-  }
-  }
-  .toggle {
-    display: none;
-  }
-.logo {
-    max-width: 60px; /* Adjust the value based on your preference */
-
-  }
-
-.demo{
-    height: 200vh;
-}
 @media (max-width: 768px) {
   header ul {
     padding-top: 30px;
   }
-
-  .toggle {
-    display: block; /* Set to block within the media query */
+  li i.bx-toggle-right {
+font-size: 40px; /* You can adjust this value to your preference */
+}
+  .nav-links-mobile {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    color: black;
-    font-size: 25px;
-    cursor: pointer;
+    display: block;
+    list-style: none;
+    box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    width: 60%;
+    height: 100vh;
+    background-color: white;
+    z-index: 888;
   }
-  
+  header ul li {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+    line-height: 70px;
+  }
+  header .link {
+    display: none;
+  }
+  .close,
+  .open {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    color: #ff014f;
+    display: block;
+    font-size: 25px;
+    z-index: 999;
+  }
+  .close {
+    right: 45%;
+  }
+  .close.home-btn {
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    color: #ff014f;
+    border-radius: 50%;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+  .header.active {
+    height: 10vh;
+  }
+  .toggle {
+    display: none;
+}
+}
+.toggle {
+  display: none;
+}
+.logo {
+  max-width: 60px; /* Adjust the value based on your preference */
+
+}
+
+.demo{
+  height: 200vh;
+}
+@media (max-width: 768px) {
+header ul {
+  padding-top: 30px;
+}
+
+.toggle {
+  display: block; /* Set to block within the media query */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: black;
+  font-size: 25px;
+  cursor: pointer;
+}
+
 }
