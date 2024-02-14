@@ -18,6 +18,10 @@ const Contact = () => {
         message: ''
     });
 
+    
+    
+
+
     const [recaptchaCompleted, setRecaptchaCompleted] = useState(false);
 
     const formRef = React.createRef();  // Create a ref for the form
@@ -53,7 +57,7 @@ const Contact = () => {
                 subject: formData.subject,
                 message: formData.message,
             };
-
+            
             emailjs.init("1kEnnpNHMM8fqhFJP");
             emailjs.sendForm("service_nyt6frj", "template_0tjklyi", formRef.current, params)
                 .then(
