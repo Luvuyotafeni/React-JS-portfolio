@@ -35,11 +35,35 @@ const Contact = () => {
     };
 
     const onRecaptchaChange = (value) => {
-        // value will be null if the reCAPTCHA challenge has not been completed
         setRecaptchaCompleted(!!value);
     };
 
-    const handleSubmit = (e) => {
+    const getData = async (e) => {
+        e.preventDefault();
+        const { name, subject, email, message } = formData;
+        const options = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                FullName: name,
+                subject,
+                Email: email,
+                Message: message
+            })
+        };
+
+        const res = await fetch('https://portfolio-bb7ce-default-rtdb.firebaseio.com/UserData.json', options);
+
+        if (res.ok) {
+            alert('Message Stored and email sent successfuly');
+        } else {
+            alert('Error Occurred');
+        }
+    }
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
         if (validateForm()) {
@@ -47,8 +71,8 @@ const Contact = () => {
 
             // Correct the params for emailjs.sendForm
             let params = {
-                to_name:"luvuyo",
-                name: formData.fullname,
+                to_name: "luvuyo",
+                name: formData.name,
                 email: formData.email,
                 subject: formData.subject,
                 message: formData.message,
@@ -59,15 +83,18 @@ const Contact = () => {
                 .then(
                     function (response) {
                         console.log("Email sent successfully:", response);
-                        alert("Email sent successfully!");
+                        // alert("Email sent successfully!"); // Consider removing this alert as it might be redundant with the next alert
                     },
                     function (error) {
                         console.log("Email sending failed:", error);
-                        alert("Email sending failed. Please try again later.");
+                        // alert("Email sending failed. Please try again later."); // Consider removing this alert as it might be redundant with the next alert
                     }
                 );
 
-            // You may want to clear the form after submission
+            // Store data in Firebase
+            await getData(e);
+
+            // Funtion to clea the form after submission is done
             setFormData({
                 name: '',
                 subject: '',
@@ -83,15 +110,15 @@ const Contact = () => {
         let valid = true;
         const newErrors = { ...formErrors };
 
-        // Validate fullname
+        // Validate name
         if (!formData.name.trim()) {
-            newErrors.name = 'Fullname is required';
+            newErrors.name = 'Name is required';
             valid = false;
         }
 
-        // Validate surname
+        // Validate subject
         if (!formData.subject.trim()) {
-            newErrors.subject = 'Surname is required';
+            newErrors.subject = 'Subject is required';
             valid = false;
         }
 
@@ -132,12 +159,12 @@ const Contact = () => {
                                     <div className='input row'>
                                         <span>NAME</span>
                                         <input type='text' name='name' value={formData.name} onChange={onChange} />
-                                        <div className='error'>{formErrors.fullname}</div>
+                                        <div className='error'>{formErrors.name}</div>
                                     </div>
                                     <div className='input row'>
                                         <span>SUBJECT </span>
                                         <input type='text' name='subject' value={formData.subject} onChange={onChange} />
-                                        <div className='error'>{formErrors.surname}</div>
+                                        <div className='error'>{formErrors.subject}</div>
                                     </div>
                                 </div>
                                 <div className='input'>
