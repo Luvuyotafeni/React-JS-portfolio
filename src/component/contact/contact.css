@@ -73,6 +73,7 @@
 
 .captcha {
   margin: 3px;
+  width: 300px;
 }
 
 /* Media Queries for Mobile */

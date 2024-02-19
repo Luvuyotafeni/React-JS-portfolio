@@ -15,7 +15,7 @@ const Skills = () => {
             {data.map((val, index) => {
               return (
                 <div className='skill-box' key={index}>
-                  <Card image={val.image} title={val.title} desc={val.desc} />
+                  <Card image={val.image} title={val.title} desc={val.desc}  />
                 </div>
               );
             })}

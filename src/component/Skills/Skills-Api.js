@@ -7,6 +7,8 @@ import SQL from "./skills/mysql_resized.png"
 import REACT from "./skills/react_resized.png"
 import Android from "./skills/android_os_logo_icon_134673_resized.png"
 import php from "./skills/php_resized.png"
+import system from "./skills/system.jpg"
+import Firebase from "./skills/firebase.jpg"
 
 const data = [
     {
@@ -61,6 +63,18 @@ const data = [
         id: 9,
         image: php,
         title: "PHP",
+        desc: "Is a server-side scripting language that is widely used for web development. It is embedded within HTML code and executed on the server",
+      },
+      {
+        id: 10,
+        image: Firebase,
+        title: "Firebase",
+        desc: "Is a server-side scripting language that is widely used for web development. It is embedded within HTML code and executed on the server",
+      },
+      {
+        id: 11,
+        image: system,
+        title: "Software Testing",
         desc: "Is a server-side scripting language that is widely used for web development. It is embedded within HTML code and executed on the server",
       },
   ]
