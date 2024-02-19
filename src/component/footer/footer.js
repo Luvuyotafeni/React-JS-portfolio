@@ -4,7 +4,7 @@ import './footer.css'
 const footer = () => {
   return (
    <>
-   <    footer>
+        <footer>
             <div className='container text-center'>
                 <p>
                     copyrights 2023 @ Luvuyo Tafeni.

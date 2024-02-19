@@ -68,6 +68,11 @@
   .projects .box {
     size: 80%;
   }
+  .projects .box.hovered p {
+    display: block;
+    color: black;
+    font-size: xx-small;
+  }
 
   .projects .projects-box {
     width: 80%;
@@ -78,7 +83,7 @@
     font-size: 20px; 
   }
   .projects .overlay{
-    font-size: x-small;
+    font-size: xx-small;
     padding: 10px;
   }
   .projects h2{
@@ -103,7 +108,7 @@
     font-size: 30px; 
   }
   .projects img{
-    width: 90%;
+    width: 40%;
   }
 }
 

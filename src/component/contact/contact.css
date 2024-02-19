@@ -98,6 +98,7 @@
 
   .contact .box {
     padding: 15px;
+    font-size: small;
   }
 
   .contact .details h2 {
@@ -131,13 +132,13 @@
 
   .mail,
   .phone {
-    font-size: small;
+    font-size:xx-small;
     padding: 15px;
   }
 
   .bxs-phone,
   .bxs-envelope {
-    font-size: 50px;
+    font-size: 30px;
   }
 
   .con {
@@ -207,7 +208,7 @@
 
   .mail,
   .phone {
-    font-size: medium;
+    font-size:xx-small;
     padding: 20px;
   }
 

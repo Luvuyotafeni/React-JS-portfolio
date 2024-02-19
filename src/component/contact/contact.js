@@ -181,6 +181,8 @@ const Contact = () => {
                                     className='captcha'
                                     sitekey="6LfHsGgpAAAAAOh5a9TZmzWFFORTrp7yXqUf0Oza"
                                     onChange={onRecaptchaChange}
+                                    size='compact'
+                                    explicit 
                                 />
                                 <button type='submit'>
                                     SEND MESSAGE
