@@ -2,6 +2,7 @@
     position: relative;
     padding: 20px;
     size: 20%;
+    height: 250px;
   }
   .projects .box:hover {
     background-color: transparent;
@@ -10,6 +11,7 @@
   .projects .box h2,
   .projects .box img {
     transition: opacity 0.5s;
+    width: 200px;
   }
   .projects .box:hover .project-title,
   .projects .box:hover .project-image {

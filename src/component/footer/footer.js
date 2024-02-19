@@ -7,7 +7,7 @@ const footer = () => {
         <footer>
             <div className='container text-center'>
                 <p>
-                    copyrights 2023 @ Luvuyo Tafeni.
+                    copyrights 2023 &copy; Luvuyo Tafeni.
                     
                 </p>
                 <p><i class='bx bxl-linkedin-square'></i><i class='bx bxl-github' ></i></p>
