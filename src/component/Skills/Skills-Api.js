@@ -9,6 +9,7 @@ import Android from "./skills/android_os_logo_icon_134673_resized.png"
 import php from "./skills/php_resized.png"
 import system from "./skills/system.jpg"
 import Firebase from "./skills/firebase.jpg"
+import git from "./skills/git.png"
 
 const data = [
     {
@@ -69,13 +70,19 @@ const data = [
         id: 10,
         image: Firebase,
         title: "Firebase",
-        desc: "Is a server-side scripting language that is widely used for web development. It is embedded within HTML code and executed on the server",
+        desc: "firebase supports both NoSQL databases and provides features for authentication, cloud storage, hosting, messaging, monitoring, and analytics.",
       },
       {
         id: 11,
         image: system,
         title: "Software Testing",
-        desc: "Is a server-side scripting language that is widely used for web development. It is embedded within HTML code and executed on the server",
+        desc: "Iesting can encompass various levels, including unit testing, integration testing, system testing, and acceptance testing. It involves executing the software with the intent of finding errors and ensuring that it behaves as expected.",
+      },
+      {
+        id: 12,
+        image: git,
+        title: "Git",
+        desc: "Git is a distributed version control system widely used in software development. It allows multiple developers to collaboratively work on projects by tracking changes to source code and coordinating modifications",
       },
   ]
   export default data
