@@ -67,6 +67,9 @@ button{
 .right{
   width: 50%;
 }
+.row{
+  margin: 5px;
+}
 .top{
   margin-top:80px;
 }
@@ -100,6 +103,7 @@ input {
   outline: none;
   border: 3px solid #e2e8ec;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 .open{
   display: none;
