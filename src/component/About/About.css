@@ -44,9 +44,28 @@
 .About .content-section{
     position: relative;
 }
-.About .left{
-    position: relative;
+.About .left {
+    display: flex;
+    flex-direction: column;
 }
+
+.About .toggle-button {
+    color: black;
+    padding: 15px 30px; /* Increase padding for larger buttons */
+    font-size: 18px; /* Increase font size */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    margin-bottom: 10px; /* Add margin between buttons */
+    width: 100%; /* Make buttons fill the screen width */
+    margin-left: 20px;
+    align-items: center;
+}
+
+.About .toggle-button:hover {
+    background-color: #d90046;
+}
+
 .About .left::after{
     content: "";
     position: absolute;
