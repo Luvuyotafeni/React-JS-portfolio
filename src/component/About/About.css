@@ -58,13 +58,14 @@
     transition: background-color 0.5s;
     margin-bottom: 10px; /* Add margin between buttons */
     width: 100%; /* Make buttons fill the screen width */
-    margin-left: 20px;
+    margin-left: 0px;
     align-items: center;
 }
 
 .About .toggle-button:hover {
     background-color: #d90046;
 }
+
 
 .About .left::after{
     content: "";

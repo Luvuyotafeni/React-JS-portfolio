@@ -18,7 +18,7 @@ const About = () => {
             <div className='left'>
               <div className='heading'>
                 <button
-                  className='toggle-button'
+                  className='btn_shadow toggle-button'
                   onClick={() => {
                     setShowExperience(true);
                     setShowEducation(false);
@@ -47,7 +47,7 @@ const About = () => {
             <div className='left'>
               <div className='heading'>
                 <button
-                  className='toggle-button'
+                  className='btn_shadow toggle-button'
                   onClick={() => {
                     setShowEducation(true);
                     setShowExperience(false);

@@ -3,6 +3,7 @@ import bank from "./pics/Bank app_resized.png"
 import versatile from "./pics/Versatile_resized.png"
 import portfolio from "./pics/portfolio_resized.png"
 import rdp from "./pics/WhatsApp Image 2024-02-02 at 08.24.49_resized_resized_resized.jpeg"
+import Tax from  "./pics/tax calculator.png"
 /* exported as data that will be used and showed at each project container*/
 const data = [
     {
@@ -43,6 +44,13 @@ const data = [
       title: "Portfolio",
       github: <a href="https://github.com/Luvuyotafeni/portfolio"><i class='bx bxl-github'></i></a>,
       desc: "This is my Portfoio, it showcases my work, skills and ways to contact me, using Javasript, CSS and HTML.",
+    },
+    {
+      id: 6,
+      image: Tax,
+      title: "Tax Calculator",
+      github: <a href="https://github.com/Luvuyotafeni/TaxCalculator"><i class='bx bxl-github'></i></a>,
+      desc: "his is a Tax calculator that uses java swings, IntelliJ and Java, this calculates the tax someone has to pay using the age, income and the rebates",
     },
     
   ]
