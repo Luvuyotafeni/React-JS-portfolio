@@ -34,10 +34,8 @@ const Header = () => {
                             <li><a href='#Skills'> Skills</a></li>
                             <li><a href='#projects'> Project</a></li>
                             <li><a href='#contact'> Contact Me</a></li>
-                            <li>
-                               
-                                    <i className={`bx ${darkMode ? 'bx-toggle-left' : 'bx-toggle-right'}` }onClick={handleModeToggle}></i>
-                                
+                            <li>                              
+                                    <i className={`bx ${darkMode ? 'bx-toggle-left' : 'bx-toggle-right'}` }onClick={handleModeToggle}></i>                               
                             </li>
                         </ul>
                         <button className='toggle' onClick={() => setMobile(!mobile)}>

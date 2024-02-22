@@ -50,7 +50,7 @@ const data = [
       image: Tax,
       title: "Tax Calculator",
       github: <a href="https://github.com/Luvuyotafeni/TaxCalculator"><i class='bx bxl-github'></i></a>,
-      desc: "his is a Tax calculator that uses java swings, IntelliJ and Java, this calculates the tax someone has to pay using the age, income and the rebates",
+      desc: "This is a Tax calculator that uses java swings, IntelliJ and Java, this calculates the tax someone has to pay using the age, income and the rebates",
     },
     
   ]

@@ -13,7 +13,7 @@ body{
 }
 
 .container{
-  max-width: 95%;
+  width: 95%;
   margin: auto;
 }
 .d_flex{
@@ -130,5 +130,9 @@ footer{
     margin:0;
     background-color: #000;
     height:60px;
+  }
+
+  header{
+    overflow-x: hidden;
   }
 }
