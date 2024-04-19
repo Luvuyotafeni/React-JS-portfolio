@@ -4,6 +4,8 @@ import versatile from "./pics/Versatile_resized.png"
 import portfolio from "./pics/portfolio_resized.png"
 import rdp from "./pics/WhatsApp Image 2024-02-02 at 08.24.49_resized_resized_resized.jpeg"
 import Tax from  "./pics/tax calculator.png"
+import Hluleka from  "./pics/Hluleka.png"
+import camera from "./pics/camera.png"
 /* exported as data that will be used and showed at each project container*/
 const data = [
     {
@@ -52,7 +54,20 @@ const data = [
       github: <a href="https://github.com/Luvuyotafeni/TaxCalculator"><i class='bx bxl-github'></i></a>,
       desc: "This is a Tax calculator that uses java swings, IntelliJ and Java, this calculates the tax someone has to pay using the age, income and the rebates",
     },
-    
+    {
+      id: 7,
+      image: Hluleka,
+      title: "Hluleka",
+      github: <a href="https://github.com/Luvuyotafeni/TaxCalculator"><i class='bx bxl-github'></i></a>,
+      desc: "This is a tourism app that uses React.js, Tailwind Css, Css, Node.Js, Express.Js and MongoDB this is used to book accommodation, activities at hluleka nature reserve",
+    },
+    {
+      id: 8,
+      image: camera,
+      title: "Lux camera's",
+      github: <a href="https://github.com/Luvuyotafeni/TaxCalculator"><i class='bx bxl-github'></i></a>,
+      desc: "This is a e-commerce website that sells camera's. This was designed using React JS, CSS",
+    },   
   ]
   export default data
   
