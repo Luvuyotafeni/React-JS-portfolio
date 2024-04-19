@@ -10,7 +10,7 @@ const Card = (props) => {
         
         {props.isHovered && (
           <>
-            <p className="overlay">{props.desc} <br></br><a className="git">{props.github}</a></p>
+            <p className="overlay">{props.desc} <br></br><a className="git">{props.github}</a><a className="link">{props.link}</a></p>
           </>
         )}
       </div>

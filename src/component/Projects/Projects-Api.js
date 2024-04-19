@@ -13,7 +13,7 @@ const data = [
       image: versatile,
       title: "Versatile Website",
       github: <a href="https://github.com/Luvuyotafeni/website"><i class='bx bxl-github'></i></a>,
-      link: <a><i class='bx bx-link'></i></a>,
+      link: <a href=""><i class='bx bx-link'></i></a>,
       desc: "This is a website that is meant to advertise skills offered at the company and also allow booking of the services. using HTML,CSS and Javascript",
     },
     {
@@ -21,7 +21,7 @@ const data = [
       image: bank,
       title: "Banking App",
       github: <a href="https://github.com/Luvuyotafeni/banking-app"><i class='bx bxl-github'></i></a>,
-      link: <a><i class='bx bx-link'></i></a>,
+      link: <a href=""><i class='bx bx-link'></i></a>,
       desc: "This is a banking application that keeps client info and allows transaction, using Python, Tinkter and SQLlite",
     },
     {
@@ -29,7 +29,7 @@ const data = [
       image: smj,
       title: "Barbershop",
       github: <a href="https://github.com/Luvuyotafeni/SMJ-Barbershop"><i class='bx bxl-github'></i></a>,
-      link: <a><i class='bx bx-link'></i></a>,
+      link: <a href=""><i class='bx bx-link'></i></a>,
       desc: "This is a website that is used to reserve space on a Barbershop and displays work done so far, using HTML,CSS and Javascript",
     },
     {
@@ -37,7 +37,7 @@ const data = [
       image: rdp,
       title: "RDP Maintenance",
       github: <a href="https://github.com/Luvuyotafeni/RDP-Maintenance"><i class='bx bxl-github'></i></a>,
-      
+      link: <a href=""><i class='bx bx-link'></i></a>,
       desc: "This is an application that is used by the municipality and clients for reserving and knowing status for rdps, using JAVA, Swing controls and MYSQL",
     },
     {
@@ -45,6 +45,7 @@ const data = [
       image: portfolio,
       title: "Portfolio",
       github: <a href="https://github.com/Luvuyotafeni/portfolio"><i class='bx bxl-github'></i></a>,
+      link: <a href=""><i class='bx bx-link'></i></a>,
       desc: "This is my Portfoio, it showcases my work, skills and ways to contact me, using Javasript, CSS and HTML.",
     },
     {
@@ -52,6 +53,7 @@ const data = [
       image: Tax,
       title: "Tax Calculator",
       github: <a href="https://github.com/Luvuyotafeni/TaxCalculator"><i class='bx bxl-github'></i></a>,
+      link: <a href=""><i class='bx bx-link'></i></a>,
       desc: "This is a Tax calculator that uses java swings, IntelliJ and Java, this calculates the tax someone has to pay using the age, income and the rebates",
     },
     {
@@ -59,6 +61,7 @@ const data = [
       image: Hluleka,
       title: "Hluleka",
       github: <a href="https://github.com/Luvuyotafeni/TaxCalculator"><i class='bx bxl-github'></i></a>,
+      link: <a href=""><i class='bx bx-link'></i></a>,
       desc: "This is a tourism app that uses React.js, Tailwind Css, Css, Node.Js, Express.Js and MongoDB this is used to book accommodation, activities at hluleka nature reserve",
     },
     {
@@ -66,6 +69,7 @@ const data = [
       image: camera,
       title: "Lux camera's",
       github: <a href="https://github.com/Luvuyotafeni/TaxCalculator"><i class='bx bxl-github'></i></a>,
+      link: <a href=""><i class='bx bx-link'></i></a>,
       desc: "This is a e-commerce website that sells camera's. This was designed using React JS, CSS",
     },   
   ]

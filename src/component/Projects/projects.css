@@ -65,6 +65,10 @@
   margin: 110px;
   font-size: 50px;
 }
+.link{
+  margin: 0;
+  font-size: 20px;
+}
 /* Media Queries for Mobile */
 @media only screen and (max-width: 480px) {
   .projects .box {
