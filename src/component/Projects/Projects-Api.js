@@ -13,7 +13,7 @@ const data = [
       image: versatile,
       title: "Versatile Website",
       github: <a href="https://github.com/Luvuyotafeni/website"><i class='bx bxl-github'></i></a>,
-      link: <a href=""><i class='bx bx-link'></i></a>,
+      link: <a href="https://versatileprogrammers.netlify.app/"><i class='bx bx-link'></i></a>,
       desc: "This is a website that is meant to advertise skills offered at the company and also allow booking of the services. using HTML,CSS and Javascript",
     },
     {
@@ -29,7 +29,7 @@ const data = [
       image: smj,
       title: "Barbershop",
       github: <a href="https://github.com/Luvuyotafeni/SMJ-Barbershop"><i class='bx bxl-github'></i></a>,
-      link: <a href=""><i class='bx bx-link'></i></a>,
+      link: <a href="https://smj-barbershop.netlify.app/"><i class='bx bx-link'></i></a>,
       desc: "This is a website that is used to reserve space on a Barbershop and displays work done so far, using HTML,CSS and Javascript",
     },
     {
@@ -45,7 +45,7 @@ const data = [
       image: portfolio,
       title: "Portfolio",
       github: <a href="https://github.com/Luvuyotafeni/portfolio"><i class='bx bxl-github'></i></a>,
-      link: <a href=""><i class='bx bx-link'></i></a>,
+      link: <a href="https://luvuyotafeni.netlify.app/"><i class='bx bx-link'></i></a>,
       desc: "This is my Portfoio, it showcases my work, skills and ways to contact me, using Javasript, CSS and HTML.",
     },
     {
@@ -69,7 +69,7 @@ const data = [
       image: camera,
       title: "Lux camera's",
       github: <a href="https://github.com/Luvuyotafeni/TaxCalculator"><i class='bx bxl-github'></i></a>,
-      link: <a href=""><i class='bx bx-link'></i></a>,
+      link: <a href="https://coalition-6c86f.web.app/"><i class='bx bx-link'></i></a>,
       desc: "This is a e-commerce website that sells camera's. This was designed using React JS, CSS",
     },   
   ]
