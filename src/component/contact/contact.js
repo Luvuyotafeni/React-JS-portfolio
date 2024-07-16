@@ -155,17 +155,17 @@ const Contact = () => {
                     <div className='contact d_flex'>
                         <div className='right box_shadow'>
                             <form ref={formRef} onSubmit={handleSubmit}>
-                                <div className='f_flex'>
-                                    <div className='input row'>
+
+                                    <div className='input '>
                                         <span>NAME</span>
                                         <input type='text' name='name' value={formData.name} onChange={onChange} />
                                         <div className='error'>{formErrors.name}</div>
                                     </div>
-                                    <div className='input row'>
-                                        <span>SUBJECT </span>
-                                        <input type='text' name='subject' value={formData.subject} onChange={onChange} />
-                                        <div className='error'>{formErrors.subject}</div>
-                                    </div>
+
+                                <div className='input '>
+                                    <span>SUBJECT </span>
+                                    <input type='text' name='subject' value={formData.subject} onChange={onChange} />
+                                    <div className='error'>{formErrors.subject}</div>
                                 </div>
                                 <div className='input'>
                                     <span>EMAIL </span>
@@ -174,7 +174,7 @@ const Contact = () => {
                                 </div>
                                 <div className='input'>
                                     <span>YOUR MESSAGE </span>
-                                    <textarea cols='30' rows='10' name='message' value={formData.message} onChange={onChange}></textarea>
+                                    <textarea cols='50' rows='10' name='message' value={formData.message} onChange={onChange}></textarea>
                                     <div className='error'>{formErrors.message}</div>
                                 </div>
                                 <ReCAPTCHA

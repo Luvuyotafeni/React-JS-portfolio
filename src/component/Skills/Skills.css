@@ -56,8 +56,12 @@
 
 /* Media Queries for Mobile */
 @media only screen and (max-width: 480px) {
+  .skills-container{
+    width: 70%;
+  }
+  
     .Skills .skill-box {
-      width: 100%; /* Adjust the width for mobile screens */
+      width: 70%; /* Adjust the width for mobile screens */
     }
     
     .Skills .box {
