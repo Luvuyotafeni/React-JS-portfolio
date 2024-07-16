@@ -50,14 +50,14 @@
 /* Media Queries for Tablet */
 @media only screen and (max-width: 768px) {
     .Skills .skill-box {
-      width: 48%; /* Adjust the width for tablet screens */
+      width: 70%; /* Adjust the width for tablet screens */
     }
   }
 
 /* Media Queries for Mobile */
 @media only screen and (max-width: 480px) {
   .skills-container{
-    width: 70%;
+    width: 100%;
   }
   
     .Skills .skill-box {
@@ -69,7 +69,7 @@
     }
   
     .Skills .box h2 {
-      margin: 15px 0;
+      margin:  0;
     }
   
     .Skills .heading h2 {

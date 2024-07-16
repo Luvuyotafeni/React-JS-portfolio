@@ -1,36 +1,40 @@
-.About .heading h2{
+.About .heading h2 {
     font-size: 40px;
 }
 
-.About .content{
-    width:85%;
-    margin: auto;
-
+.About .content {
+    width: 80%;
+    margin: 10px;
 }
-.About .box{
+
+.About .box {
     padding: 30px;
 }
 
-.About p{
+.About p {
     font-size: 18px;
     transition: 0.5s;
-
 }
-.About .box{
+
+.About .box {
     margin-bottom: 40px;
     position: relative;
 }
-.About .btn_shadow:hover{
+
+.About .btn_shadow:hover {
     transform: translate(0);
 }
-.About .box:hover .btn_shadow{
+
+.About .box:hover .btn_shadow {
     background: #ff014f;
     box-shadow: none;
     color: white;
 }
-.About .content-section{
+
+.About .content-section {
     position: relative;
 }
+
 .About .left {
     display: flex;
     flex-direction: column;
@@ -53,8 +57,7 @@
     background-color: #d90046;
 }
 
-
-.About .left::after{
+.About .left::after {
     content: "";
     position: absolute;
     top: 16%;
@@ -63,8 +66,9 @@
     width: 5px;
     background: #d9dee2;
     z-index: -2;
-}   
-.About .box::after{
+}
+
+.About .box::after {
     content: "";
     position: absolute;
     top: 13%;
@@ -72,8 +76,9 @@
     height: 5px;
     width: 50px;
     background: #d9dee2;
-} 
-.About .left::before{
+}
+
+.About .left::before {
     content: "";
     position: absolute;
     top: 11%;
@@ -86,6 +91,7 @@
     border-right: 50%;
     z-index: 5;
 }
+
 /* Media Queries for smaller screens */
 
 @media only screen and (max-width: 1200px) {
@@ -100,7 +106,8 @@
     .About .heading h2 {
         font-size: 30px;
     }
-    .title_content{
+
+    .title_content {
         font-size: small;
     }
 
@@ -116,13 +123,14 @@
 @media only screen and (max-width: 768px) {
     /* Adjust styles for screens up to 768px width */
     .About .content {
-        width: 100%;
+        width: 90%;
         font-size: xx-small;
     }
-    .About .toggle-button{
+
+    .About .toggle-button {
         font-size: 10px;
-        
     }
+
     .About p {
         font-size: 11px;
         padding: 0;
@@ -130,5 +138,37 @@
 
     .About .box {
         margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adjust styles for screens up to 480px width */
+    .About .heading h2 {
+        font-size: 24px;
+    }
+
+    .About .content {
+        width: 90%;
+        padding: 0 10px;
+    }
+
+    .About .toggle-button {
+        font-size: 8px;
+        padding: 10px 0;
+    }
+
+    .About p {
+        font-size: 10px;
+    }
+
+    .About .box {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .About .left::after {
+        top: 20%;
+        height: 100vh;
+        width: 3px;
     }
 }

@@ -1,73 +1,83 @@
-header{
+header {
   height: 10vh;
   line-height: 10vh;
+  width: 100%;
 }
-header .container{
+
+header .container {
   padding-top: 15px;
 }
-header ul li{
-  margin-left : 30px;
+
+header ul li {
+  margin-left: 30px;
   font-size: 3rem;
 }
-header ul li a{
+
+header ul li a {
   transition: 0.5s;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 1px;
   margin-left: 20px;
-
 }
-header ul li a:hover{
-  color:#ff014f;
 
+header ul li a:hover {
+  color: #ff014f;
 }
-.home-btn{
+
+.home-btn {
   padding: 18px 25px;
   border-radius: 6px;
   transition: 0.3s all ease;
-  cursor:pointer;
+  cursor: pointer;
   height: fit-content;
   color: #ff014f;
 }
-.home-btn{
-  background:linear-gradient(145deg,#e2eBec,#ffffff);
+
+.home-btn {
+  background: linear-gradient(145deg, #e2eBec, #ffffff);
   box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
 }
-.home-btn:hover{
+
+.home-btn:hover {
   background-color: #ff014f;
   color: white;
 }
-.open{
+
+.open {
   display: none;
 }
-.header.active{
-  height:15vh;
+
+.header.active {
+  height: 15vh;
   position: fixed;
   top: 0;
   z-index: 1000;
   width: 100%;
   background-color: #ecf0f3;
-  box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75)
-
-}
-.mode{
-font-size: 40px;
+  box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.75);
 }
 
+.mode {
+  font-size: 40px;
+}
 
 @media (max-width: 768px) {
   header ul {
     padding-top: 30px;
   }
-  header{
+
+  header {
     height: 15vh;
     line-height: 10vh;
     width: 100%;
     overflow-x: hidden;
   }
+
   li i.bx-toggle-right {
     font-size: 40px; /* You can adjust this value to your preference */
   }
+
   .nav-links-mobile {
     position: absolute;
     display: block;
@@ -81,15 +91,18 @@ font-size: 40px;
     background-color: white;
     z-index: 888;
   }
+
   header ul li {
     width: 100%;
     transition: all 0.5s ease-in-out;
     text-transform: uppercase;
     line-height: 70px;
   }
+
   header .link {
     display: none;
   }
+
   .close,
   .open {
     position: absolute;
@@ -100,9 +113,11 @@ font-size: 40px;
     font-size: 25px;
     z-index: 999;
   }
+
   .close {
     right: 45%;
   }
+
   .close.home-btn {
     background: linear-gradient(145deg, #e2e8ec, #ffffff);
     color: #ff014f;
@@ -112,37 +127,111 @@ font-size: 40px;
     height: 60px;
     line-height: 60px;
   }
+
   .header.active {
     height: 15vh;
   }
+
   .toggle {
     display: none;
     right: 0;
   }
 }
+
 .toggle {
   display: none;
 }
+
 .logo {
   max-width: 60px; /* Adjust the value based on your preference */
-
 }
 
-.demo{
+.demo {
   height: 200vh;
 }
+
 @media (max-width: 768px) {
-header ul {
-  padding-top: 30px;
+  header ul {
+    padding-top: 30px;
   }
 
   .toggle {
-  display: block; /* Set to block within the media query */
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  color: black;
-  font-size: 25px;
-  cursor: pointer;
+    display: block; /* Set to block within the media query */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+  }
+}
+
+/* Add media queries for 480px and 320px screens */
+
+@media (max-width: 480px) {
+  header {
+    height: 12vh;
+    line-height: 12vh;
+    width: 100%;
+  }
+
+  header ul {
+    padding-top: 20px;
+  }
+
+  header ul li {
+    font-size: 2.5rem;
+    margin-left: 15px;
+  }
+
+  header ul li a {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .home-btn {
+    padding: 15px 20px;
+  }
+
+  .home-btn {
+    box-shadow: 3px 3px 6px #cbcbcb, 3px -3px 6px #ffffff;
+  }
+
+  .nav-links-mobile {
+    width: 80%;
+  }
+}
+
+@media (max-width: 320px) {
+  header {
+    height: 14vh;
+    line-height: 14vh;
+    width: 100%;
+  }
+
+  header ul {
+    padding-top: 10px;
+  }
+
+  header ul li {
+    font-size: 2rem;
+    margin-left: 10px;
+  }
+
+  header ul li a {
+    font-size: 16px;
+    margin-left: 5px;
+  }
+
+  .home-btn {
+    padding: 12px 15px;
+  }
+
+  .home-btn {
+    box-shadow: 2px 2px 4px #cbcbcb, 2px -2px 4px #ffffff;
+  }
+
+  .nav-links-mobile {
+    width: 100%;
   }
 }
