@@ -178,7 +178,6 @@ const Contact = () => {
                                     <div className='error'>{formErrors.message}</div>
                                 </div>
                                 <ReCAPTCHA
-                                  
                                     sitekey="6LfHsGgpAAAAAOh5a9TZmzWFFORTrp7yXqUf0Oza"
                                     onChange={onRecaptchaChange}
                                     size='compact'
