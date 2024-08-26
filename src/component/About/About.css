@@ -107,6 +107,9 @@
         font-size: 30px;
     }
 
+    .About h4 {
+        margin-left: 0;
+    }
     .title_content {
         font-size: small;
     }
@@ -127,6 +130,10 @@
         font-size: xx-small;
     }
 
+    .About h4 {
+        margin-left: 0;
+    }
+
     .About .toggle-button {
         font-size: 10px;
     }
@@ -145,11 +152,15 @@
     /* Adjust styles for screens up to 480px width */
     .About .heading h2 {
         font-size: 24px;
+        
     }
+
+
 
     .About .content {
         width: 90%;
         padding: 0 10px;
+        margin:0;
     }
 
     .About .toggle-button {
@@ -163,6 +174,41 @@
 
     .About .box {
         padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .About .left::after {
+        top: 20%;
+        height: 100vh;
+        width: 3px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    /* Adjust styles for screens up to 480px width */
+    .About .heading h2 {
+        font-size: 24px;
+    }
+
+    .About h4 {
+        margin-left: 0;
+    }
+    .About .content {
+        width: 90%;
+        padding: 0px;
+        margin:0;
+    }
+
+    .About .toggle-button {
+        font-size: 8px;
+        padding: 0;
+    }
+
+    .About p {
+        font-size: 10px;
+    }
+
+    .About .box {
+        padding: 50px;
         margin-bottom: 15px;
     }
 
