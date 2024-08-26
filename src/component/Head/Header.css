@@ -1,27 +1,27 @@
-.header {
+header {
   height: 10vh;
   line-height: 10vh;
   width: 100%;
 }
 
-.header .container {
+header .container {
   padding-top: 15px;
 }
 
-.header ul li {
+header ul li {
   margin-left: 30px;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
-.header ul li a {
+header ul li a {
   transition: 0.5s;
-  font-size: 1.6rem;
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: 1px;
   margin-left: 20px;
 }
 
-.header ul li a:hover {
+header ul li a:hover {
   color: #ff014f;
 }
 
@@ -39,6 +39,10 @@
 .home-btn:hover {
   background-color: #ff014f;
   color: white;
+}
+
+.open {
+  display: none;
 }
 
 .header.active {
@@ -68,45 +72,60 @@
 }
 
 @media (max-width: 768px) {
-  .header {
-    height: 12vh;
-    line-height: 12vh;
+  header ul {
+    padding-top: 30px;
+  }
+
+  header {
+    height: 15vh;
+    line-height: 10vh;
+    width: 100%;
     overflow-x: hidden;
   }
 
-  .header .container {
-    padding-top: 10px;
-    padding-bottom: 10px;
+  li i.bx-toggle-right {
+    font-size: 40px; /* You can adjust this value to your preference */
   }
 
   .nav-links-mobile {
-    position: fixed; /* Ensure it stays fixed relative to the viewport */
+    position: fixed;
     display: block;
     list-style: none;
     box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    left: 0;
+    right: 0;
     top: 0;
     transition: all 0.5s ease-in-out;
-    width: 80%;
+    width: 80%; /* Set width to 80% */
     height: 100vh;
     background-color: white;
     z-index: 888;
-    overflow-y: auto; /* Enable scrolling if content overflows */
+    padding: 20px;
   }
 
-  .header ul li {
+  header ul li {
     width: 100%;
+    transition: all 0.5s ease-in-out;
     text-transform: uppercase;
-    line-height: 60px;
-    font-size: 1.8rem;
+    line-height: 70px;
   }
 
-  .header .link {
+  header .link {
     display: none;
   }
 
-  .toggle {
+  .close,
+  .open {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #ff014f;
     display: block;
+    font-size: 25px;
+    z-index: 999; /* Ensure the close icon is on top */
+  }
+
+  .toggle {
+    display: block; /* Set to block within the media query */
     position: absolute;
     top: 20px;
     right: 20px;
@@ -114,89 +133,74 @@
     font-size: 25px;
     cursor: pointer;
   }
-
-  .close,
-  .open {
-    position: absolute;
-    top: 35px;
-    right: 20px;
-    color: #ff014f;
-    display: block;
-    font-size: 25px;
-    z-index: 999;
-  }
-
-  .close {
-    right: 45%;
-  }
-
-  .close.home-btn {
-    background: linear-gradient(145deg, #e2e8ec, #ffffff);
-    color: #ff014f;
-    border-radius: 50%;
-    padding: 0;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-  }
 }
 
+/* Add media queries for 480px and 320px screens */
+
 @media (max-width: 480px) {
-  .header {
+  header {
     height: 12vh;
     line-height: 12vh;
+    width: 100%;
   }
 
-  .header ul {
+  header ul {
     padding-top: 20px;
   }
 
-  .header ul li {
-    font-size: 1.6rem;
+  header ul li {
+    font-size: 2.5rem;
     margin-left: 15px;
   }
 
-  .header ul li a {
-    font-size: 1.4rem;
+  header ul li a {
+    font-size: 18px;
     margin-left: 10px;
   }
 
   .home-btn {
     padding: 15px 20px;
+  }
+
+  .home-btn {
     box-shadow: 3px 3px 6px #cbcbcb, 3px -3px 6px #ffffff;
   }
 
   .nav-links-mobile {
-    width: 80%;
+    width: 80%; /* Ensure width is 80% on small screens */
   }
 }
 
 @media (max-width: 320px) {
-  .header {
+  header {
     height: 14vh;
     line-height: 14vh;
+    width: 100%;
   }
 
-  .header ul {
+  header ul {
     padding-top: 10px;
   }
 
-  .header ul li {
-    font-size: 1.4rem;
+  header ul li {
+    font-size: 2rem;
     margin-left: 10px;
   }
 
-  .header ul li a {
-    font-size: 1.2rem;
+  header ul li a {
+    font-size: 16px;
     margin-left: 5px;
   }
 
   .home-btn {
     padding: 12px 15px;
+  }
+
+  .home-btn {
     box-shadow: 2px 2px 4px #cbcbcb, 2px -2px 4px #ffffff;
   }
 
   .nav-links-mobile {
-    width: 100%;
+    width: 80%; /* Ensure width is 80% on the smallest screens */
   }
 }
