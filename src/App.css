@@ -17,7 +17,7 @@ body {
 
 .container {
   width: 95%;
-  margin: auto;
+  /* margin: auto; */
 }
 
 .d_flex {
@@ -79,7 +79,7 @@ button {
 }
 
 .top {
-  margin-top: 80px;
+  margin-top: 150px;
 }
 
 .mtop {
