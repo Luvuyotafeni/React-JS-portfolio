@@ -72,7 +72,7 @@
     margin-top: 20px;
     margin-left: 100px;
 }
-.btn_shadow:hover{
+.btn_shadows:hover{
     background-color: #be5e5e;
     color: black;
     transform: translateY(-10px);

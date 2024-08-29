@@ -8,7 +8,6 @@ import Project from './component/Projects/projects'
 import Contact from './component/contact/contact'
 import Footer from './component/footer/footer'
 
-
 const App = () => {
   return (
     <>
