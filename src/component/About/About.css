@@ -21,11 +21,8 @@
     position: relative;
 }
 
-.About .btn_shadow:hover {
-    transform: translate(0);
-}
 
-.About .box:hover .btn_shadow {
+.btn_shadow:hover {
     background: #be5e5e;
     box-shadow: none;
     color: white;
