@@ -15,10 +15,10 @@
 }
 
 .Skills .box:hover p {
-    color: black;
+    color: white;
 }
 .Skills .box:hover i {
-    color: black;
+    color: white;
     opacity: 1;
 }
 .Skills .skills-container {
@@ -35,8 +35,8 @@
 }
 
 .btn_shadow:hover{
-  background-color: #ecf0f3;
-  color: black;
+  background: #ff041f;
+  color: white;
   transform: translateY(-10px);
 }
 

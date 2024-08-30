@@ -21,6 +21,16 @@
     position: relative;
 }
 
+.btn_shadow {
+    padding: 20px 30px; /* Increase padding for larger buttons */
+    font-size: 20px; /* Increase font size */
+    border-radius: 6px;
+    transition: 0.5s all ease;
+    cursor: pointer;
+    color: #000;
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+}
 
 .btn_shadow:hover {
     background: #be5e5e;
@@ -92,14 +102,12 @@
 /* Media Queries for smaller screens */
 
 @media only screen and (max-width: 1200px) {
-    /* Adjust styles for screens up to 1200px width */
     .About h4 {
         margin-left: 0;
     }
 }
 
 @media only screen and (max-width: 992px) {
-    /* Adjust styles for screens up to 992px width */
     .About .heading h2 {
         font-size: 30px;
     }
@@ -118,10 +126,14 @@
     .About p {
         font-size: 16px;
     }
+
+    .btn_shadow {
+        padding: 18px 25px; /* Adjust padding for medium screens */
+        font-size: 18px; /* Adjust font size for medium screens */
+    }
 }
 
 @media only screen and (max-width: 768px) {
-    /* Adjust styles for screens up to 768px width */
     .About .content {
         width: 90%;
         font-size: xx-small;
@@ -129,6 +141,11 @@
 
     .About h4 {
         margin-left: 0;
+    }
+
+    .btn_shadow {
+        padding: 16px 20px; /* Adjust padding for smaller screens */
+        font-size: 16px; /* Adjust font size for smaller screens */
     }
 
     .About .toggle-button {
@@ -146,16 +163,19 @@
 }
 
 @media only screen and (max-width: 480px) {
-    /* Adjust styles for screens up to 480px width */
     .About .heading h2 {
         font-size: 24px;
-        
     }
 
     .About .content {
         width: 90%;
         padding: 0 10px;
         margin:0;
+    }
+
+    .btn_shadow {
+        padding: 14px 15px; /* Adjust padding for very small screens */
+        font-size: 14px; /* Adjust font size for very small screens */
     }
 
     .About .toggle-button {
@@ -177,39 +197,53 @@
         height: 100vh;
         width: 3px;
     }
+
+    footer {
+        margin: 0;
+        background-color: #000;
+        height: 60px;
+    }
 }
+
 @media only screen and (max-width: 320px) {
-    /* Adjust styles for screens up to 480px width */
     .About .heading h2 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
-    .About h4 {
-        margin-left: 0;
-    }
     .About .content {
         width: 90%;
         padding: 0px;
         margin:0;
     }
 
+    .btn_shadow {
+        padding: 12px 10px; /* Adjust padding for extra small screens */
+        font-size: 12px; /* Adjust font size for extra small screens */
+    }
+
     .About .toggle-button {
-        font-size: 8px;
-        padding: 0;
+        font-size: 6px;
+        padding: 8px 0;
     }
 
     .About p {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .About .box {
-        padding: 50px;
-        margin-bottom: 15px;
+        padding: 8px;
+        margin-bottom: 10px;
     }
 
     .About .left::after {
         top: 20%;
         height: 100vh;
-        width: 3px;
+        width: 2px;
+    }
+
+    footer {
+        margin: 0;
+        background-color: #000;
+        height: 40px;
     }
 }

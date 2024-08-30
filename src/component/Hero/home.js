@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <section id='home'>
-        <div className='container f_flex '>
+        <div className='container f_flex'>
           {/* Right section now goes first */}
           <div className='right'>
             <div className='right_img'>
@@ -18,7 +18,7 @@ const Home = () => {
           </div>
 
           {/* Left section now goes second */}
-          <div className='hero left_top top'>
+          <div className='left_top top'>
             <p>
               <h1>Hi There</h1>
               <h1><span>I'm Luvuyo Tafeni</span></h1>
@@ -41,10 +41,10 @@ const Home = () => {
                   <a href={resume}>HIRE ME</a>
                 </button>
                 <div className='button'>
-                  <button className='btn_shadows'>
+                  <button className='btn_shadow'>
                     <a href='https://www.linkedin.com/in/luvuyo-tafeni-357998230/'><i class='bx bxl-linkedin-square'></i></a>
                   </button>
-                  <button className='btn_shadows'>
+                  <button className='btn_shadow'>
                     <a href='https://github.com/Luvuyotafeni?tab=repositories'> <i class='bx bxl-github'></i></a>
                   </button>
                 </div>

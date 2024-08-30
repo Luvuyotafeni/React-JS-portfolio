@@ -1,5 +1,7 @@
 .hire {
     margin-bottom: 20px;
+    font-size: 14px; /* Decreased button text size */
+    padding: 10px 20px; /* Adjusted padding for smaller buttons */
 }
 
 .hero h3 {
@@ -8,7 +10,7 @@
 }
 
 .hero h1 {
-    font-size: 40px;
+    font-size: 35px; /* Decreased font size */
     font-weight: bold;
 }
 
@@ -17,7 +19,7 @@
 }
 
 .hero h2 {
-    font-size: 40px;
+    font-size: 30px; /* Decreased font size */
     font-weight: bold;
     color: #be5e5e;
 }
@@ -27,108 +29,200 @@
 }
 
 .hero_btn {
-    margin-top: 20%;
+    margin-top: 15%; /* Reduced top margin */
+    margin-left: 100px;
+
 }
 
 .hero_btn h4 {
     font-weight: 500;
     letter-spacing: 2px;
     color: #43474b;
-    font-size: 15px;
-    margin: 30px 0 30px 0;
+    font-size: 14px; /* Decreased font size */
+    margin: 20px 0;
 }
 
 .hero_btn button {
-    margin-left: 30px;
+    margin-left: 20px; /* Decreased margin between buttons */
+    font-size: 14px; /* Decreased button text size */
+    padding: 8px 16px; /* Adjusted padding for smaller buttons */
 }
 
 .hero_btn i {
-    font-size: 20px;
+    font-size: 18px; /* Decreased icon size */
 }
 
 .hero_btn button img {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
 }
 
 /* Updated Layout */
-.hero .left_top {
-    margin-left: 40%;
+.left_top {
+    margin-left: 150px;
     margin-right: 10%;
     width: 40%;
-    align-items: center;
+    align-self: center;
+    text-align: center; /* Center align text */
 }
 
-.right {
-    width: 40%;
-    margin-left: 100px;
-    margin-right: 200px;
-}
-
-.hero .right_img {
+.right_img {
     border-radius: 10px;
-    height: 520px;
-    width: 510px;
+    height: 550px; /* Increased height */
+    width: 540px; /* Increased width */
     margin-top: 20px;
-    margin-left: 100px;
+    margin-left: 200px; 
+    margin-right: 200px;/* Center the image */
 }
-.btn_shadows:hover{
-    background-color: #be5e5e;
-    color: black;
-    transform: translateY(-10px);
-  }
 
 /* Responsive Styles */
-@media only screen and (max-width: 480px) {
-    .hero .right_img {
-        width: 80%;
-        height: 100px; /* Adjust the height for smaller screens */
-    }
-
-    .hero .right_img img {
-        width: 80%;
-        height: 100px; /* Adjust the height for smaller screens */
-        position: relative;
-        top: 0;
-        right: 0;
-        margin: 0;
-    }
-}
-
 @media only screen and (max-width: 768px) {
-    .hero .left_top,
-    .hero .right {
-        width: 80%; /* Adjust the width for smaller screens */
-        margin: 0;
-    }
-
-    .hero .left_top {
-        margin-right: 0;
-    }
-
-    .hero .right_img {
+    .right_img {
         width: 80%;
-        height: 300px; /* Adjust the height for smaller screens */
+        margin: auto;
+        text-align: center;
+    }
+    .left_top {
+        margin-left: 30px;
+        margin-right: 10%;
+        width: 40%;
+        align-self: center;
+        text-align: center; /* Center align text */
     }
 
-    .hero .right_img img {
-        width: 80%;
-        height: 70%; /* Adjust the height for smaller screens */
-        position: relative;
-        top: 0;
-        right: 0;
-        margin-left: 50px;
+    .right_img {
+        height: 350px; /* Adjust the height for medium screens */
+        margin: 0 0 0 100px; /* Center the image */
     }
 
-    .hero p {
-        font-size: 10px; /* Adjust the font size for smaller screens */
+    .right_img img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+
     }
 
     .hero h1 {
-        font-size: 20px;
+        font-size: 28px; /* Decreased font size */
     }
 
     .hero h2 {
-        font-size: 20px;
+        font-size: 25px; /* Decreased font size */
+    }
+
+    .hero p {
+        font-size: 12px; /* Adjusted font size */
+    }
+
+    .hero_btn {
+        margin-top: 10%; /* Reduced top margin */
+        margin-left:30px
+    }
+
+    .hero_btn button {
+        margin-left: 15px; /* Reduced margin */
+        font-size: 12px; /* Decreased button text size */
+    }
+
+    .hero_btn i {
+        font-size: 16px; /* Adjusted icon size */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .right_img {
+        width: 90%;
+        height: auto; /* Maintain aspect ratio for small screens */
+
+    }
+    .left_top {
+        margin-left: 20px;
+        margin-right: 10%;
+        width: 40%;
+        align-self: center;
+        text-align: center; /* Center align text */
+    }
+
+    .right_img img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        position: relative;
+        top: 0;
+        right: 0;
+
+    }
+
+    .hero h1 {
+        font-size: 22px; /* Decreased font size */
+    }
+
+    .hero h2 {
+        font-size: 20px; /* Decreased font size */
+    }
+
+    .hero p {
+        font-size: 12px; /* Adjusted font size */
+    }
+
+    .hero_btn {
+        margin-top: 8%; /* Reduced top margin */
+        margin-left: 20px;
+    }
+
+    .hero_btn h4 {
+        font-size: 12px; /* Decreased font size */
+    }
+
+    .hero_btn button {
+        margin-left: 10px; /* Reduced margin */
+        font-size: 12px; /* Decreased button text size */
+    }
+
+    .hero_btn i {
+        font-size: 14px; /* Adjusted icon size */
+    }
+}
+
+@media only screen and (max-width: 326px) {
+    .right_img {
+        width: 85%;
+        height: auto; /* Maintain aspect ratio for very small screens */
+
+    }
+    .left_top {
+        margin-left: 20px;
+        margin-right: 10%;
+        width: 40%;
+        align-self: center;
+        text-align: center; /* Center align text */
+    }
+
+    .right_img img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .hero h1,
+    .hero h2 {
+        font-size: 18px; /* Decreased font size */
+    }
+
+    .hero p {
+        font-size: 10px; /* Reduced font size */
+    }
+
+    .hero_btn {
+        margin-top: 5%; /* Reduced top margin */
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .hero_btn button {
+        margin: 5px 0; /* Smaller margin between buttons */
+        font-size: 10px; /* Decreased button text size */
+    }
+
+    .hero_btn i {
+        font-size: 12px; /* Adjusted icon size */
     }
 }
