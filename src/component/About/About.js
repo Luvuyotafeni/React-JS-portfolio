@@ -15,8 +15,8 @@ const About = () => {
             <h2>ABOUT</h2>
           </div>
           <div className='summary'>
-            <div><p>1+ years experience</p></div>
-            <div><p>15+ projects</p></div>
+            <div><h4>1+ years experience</h4></div>
+            <div><h4>15+ projects</h4></div>
           </div>
           <div className='content-section mtop d_flex'>
             <div className='left'>

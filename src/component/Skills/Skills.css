@@ -35,7 +35,7 @@
 }
 
 .btn_shadow:hover{
-  background: #ff041f;
+  background: #be5e5e;
   color: white;
   transform: translateY(-10px);
 }
