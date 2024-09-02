@@ -14,6 +14,10 @@ const About = () => {
           <div className='heading text-center'>
             <h2>ABOUT</h2>
           </div>
+          <div className='summary'>
+            <div><p>1+ years experience</p></div>
+            <div><p>15+ projects</p></div>
+          </div>
           <div className='content-section mtop d_flex'>
             <div className='left'>
               <div className='heading'>

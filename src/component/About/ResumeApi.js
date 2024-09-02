@@ -8,21 +8,21 @@ const ResumeApi = [
   },
   
   {
-    id: 4,
+    id: 2,
     category: "experience",
     year: "Joel Computers (2023 March - 2023 July) ",
     title: "Junior IT technician",
     desc: "A Junior IT Technician is an entry-level position responsible for providing technical support to end-users, maintaining computer systems and networks, troubleshooting hardware and software issues, and assisting with IT-related tasks. Key responsibilities include technical support, hardware and software maintenance, user account management, network support, documentation, and collaboration with the IT team.",
   },
   {
-    id: 5,
+    id: 3,
     category: "experience",
     year: "CapaCiti  (2023 July - 2024 January) ",
     title: "Software Development Intern",
     desc: "I was an intern, I was  working with frontend, backend development technologies. The technologies I was working with were, HTML, JAVASCRIPT, CSS, Python, JAVA, SQL and I was under supervision also reporting to my candidate success manager. ",
   },
   {
-    id: 6,
+    id: 4,
     category: "experience",
     year: "Younglings Africa (2024 January - Current) ",
     title: "Junior Sofware Developer",
