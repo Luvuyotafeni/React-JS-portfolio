@@ -26,7 +26,7 @@ const ResumeApi = [
     category: "experience",
     year: "Younglings Africa (2024 January - Current) ",
     title: "Junior Sofware Developer",
-    desc: "I am Junior software developer, working with front-end, back-end development technologies. The technologies I was working with were,React-js CSS, building dynamic websites",
+    desc: "I am Junior software developer, creating and managing websites and mobile applications using technoligies like, Wordpress, Elementor, React JS, CSS, JavaScript, express.js, Node js, Java, Spring boot, React Native, Android studio and more",
   },
 ]
 
