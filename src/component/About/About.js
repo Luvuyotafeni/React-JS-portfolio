@@ -3,6 +3,7 @@ import './About.css';
 import Card from './card';
 import ResumeApi from './ResumeApi';
 
+
 const About = () => {
   const [showEducation, setShowEducation] = useState(false);
   const [showExperience, setShowExperience] = useState(true); // Default to show experience

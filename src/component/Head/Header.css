@@ -65,6 +65,7 @@ header ul li a:hover {
 
 .logo {
   max-width: 60px; /* Adjust the value based on your preference */
+  margin-left: 10px;
 }
 
 .demo {
