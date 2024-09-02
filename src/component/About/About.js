@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './About.css';
 import Card from './card';
 import ResumeApi from './ResumeApi';
-
+import { Typewriter } from 'react-simple-typewriter'
 
 const About = () => {
   const [showEducation, setShowEducation] = useState(false);
@@ -16,8 +16,17 @@ const About = () => {
             <h2>ABOUT</h2>
           </div>
           <div className='summary'>
-            <div><h4>1+ years experience</h4></div>
-            <div><h4>15+ projects</h4></div>
+            <div><h4>
+            <Typewriter
+                words={['1+ years experience', '15+ projects']}
+                loop
+                cursor
+                cursorStyle='_'
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+              </h4></div>
           </div>
           <div className='content-section mtop d_flex'>
             <div className='left'>
