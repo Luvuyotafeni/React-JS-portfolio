@@ -74,6 +74,10 @@
     margin-left: 200px; 
     margin-right: 200px;/* Center the image */
 }
+.top {
+    margin-top: 200px;
+  }
+  
 
 /* Responsive Styles */
 @media only screen and (max-width: 768px) {
@@ -82,6 +86,10 @@
         margin: auto;
         text-align: center;
     }
+    .top {
+        margin-top: 200px;
+      }
+      
     .left_top {
         margin-left: 30px;
         margin-right: 10%;
@@ -129,13 +137,17 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .left_top{
+        margin-right: 100px;
+    }
     .right_img {
         width: 90%;
         height: auto; /* Maintain aspect ratio for small screens */
-
+        margin-right: 10px;
     }
     .left_top {
-        margin-left: 20px;
+        margin-left: 10px;
+        margin-top: 30px;
         margin-right: 10%;
         width: 40%;
         align-self: center;
@@ -180,25 +192,31 @@
     .hero_btn i {
         font-size: 14px; /* Adjusted icon size */
     }
+    .f_flex{
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 326px) {
     .right_img {
         width: 85%;
         height: auto; /* Maintain aspect ratio for very small screens */
+        margin-right: 0;
+        margin-bottom: 20px;
 
     }
     .left_top {
-        margin-left: 20px;
-        margin-right: 10%;
-        width: 40%;
+        margin-left: 50px;
+        margin-top: 0;
+        width: 100%;
         align-self: center;
         text-align: center; /* Center align text */
     }
 
     .right_img img {
-        width: 100%;
-        height: auto; /* Maintain aspect ratio */
+        width: 150px;
+        height: 150px; /* Maintain aspect ratio */
+        margin-right: 0;
     }
 
     .hero h1,
@@ -224,5 +242,8 @@
 
     .hero_btn i {
         font-size: 12px; /* Adjusted icon size */
+    }
+    .f_flex{
+        flex-direction: column;
     }
 }
