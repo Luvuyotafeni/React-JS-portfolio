@@ -6,6 +6,7 @@ import rdp from "./pics/WhatsApp Image 2024-02-02 at 08.24.49_resized_resized_re
 import Tax from  "./pics/tax calculator.png"
 import Hluleka from  "./pics/Hluleka.png"
 import camera from "./pics/camera.png"
+import barbie from "./pics/Screenshot 2024-09-03 133055.png"
 /* exported as data that will be used and showed at each project container*/
 const data = [
     {
@@ -68,10 +69,18 @@ const data = [
       id: 8,
       image: camera,
       title: "Lux camera's",
-      github: <a href="https://github.com/Luvuyotafeni/TaxCalculator"><i class='bx bxl-github'></i></a>,
+      github: <a href="https://github.com/Luvuyotafeni/lux-camera-s"><i class='bx bxl-github'></i></a>,
       link: <a href="https://coalition-6c86f.web.app/"><i class='bx bx-link'></i></a>,
       desc: "This is a e-commerce website that sells camera's. This was designed using React JS, CSS",
     },   
+    {
+      id: 9,
+      image: barbie,
+      title: "Salon",
+      github: <a href="https://github.com/Luvuyotafeni/Salon"><i class='bx bxl-github'></i></a>,
+      link: <a href="https://salon-69343.web.app/"><i class='bx bx-link'></i></a>,
+      desc: "This is a e-commerce website that sells camera's. This was designed using React JS, CSS",
+    }, 
   ]
   export default data
   
