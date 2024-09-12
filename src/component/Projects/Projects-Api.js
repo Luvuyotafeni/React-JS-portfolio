@@ -61,7 +61,7 @@ const data = [
       id: 7,
       image: Hluleka,
       title: "Hluleka",
-      github: <a href="https://github.com/Luvuyotafeni/TaxCalculator"><i class='bx bxl-github'></i></a>,
+      github: <a href="https://github.com/Luvuyotafeni/Hluleka"><i class='bx bxl-github'></i></a>,
       link: <a href=""><i class='bx bx-link'></i></a>,
       desc: "This is a tourism app that uses React.js, Tailwind Css, Css, Node.Js, Express.Js and MongoDB this is used to book accommodation, activities at hluleka nature reserve",
     },
