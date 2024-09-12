@@ -11,6 +11,30 @@ const Skills = () => {
           <div className='heading'>
             <h2>SKILLS</h2>
           </div>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-md-3'>
+                <div className='card'>
+                  <h5>Mobile App Development</h5>
+                </div>
+              </div>
+              <div className='col-md-3'>
+                <div className='card'>
+                  <h5>Web Development</h5>
+                </div>
+              </div>
+              <div className='col-md-3'>
+                <div className='card'>
+                  <h5>UX Development</h5>
+                </div>
+              </div>
+              <div className='col-md-3'>
+                <div className='card'>
+                  <h5>Databases</h5>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className='skills-container'>
             {data.map((val, index) => {
               return (
