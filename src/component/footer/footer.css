@@ -5,3 +5,7 @@
 .bxl-github{
     font-size:20px;
 }
+footer{
+ z-index:999;
+ bottom:0;
+}

@@ -1,13 +1,33 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import Card from './card'
 import data from "./Skills-Api"
 import "./Skills.css"
 
 const Skills = () => {
+  const [current, setCurrent] = useState(0); // Set the initial state for the carousel
+
+  const length = data.length; // Total number of slides
+
+  // Function to go to the next slide
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  // Function to go to the previous slide
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+    // Auto slide every 5 seconds
+    useEffect(() => {
+      const interval = setInterval(nextSlide, 1000);
+      return () => clearInterval(interval); // Clear interval when component unmounts
+    }, [current]); // Re-run when `current` changes
+
   return (
     <>
       <section className='Skills top' id='Skills'>
-        <div className='container'>
+        <div className='container-top'>
           <div className='heading'>
             <h2>SKILLS</h2>
           </div>
@@ -39,14 +59,21 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className='skills-container'>
-            {data.map((val, index) => {
-              return (
-                <div className='skill-box' key={index}>
-                  <Card image={val.image} title={val.title} desc={val.desc}  />
-                </div>
-              );
-            })}
+          <div className="carousel-container">
+            {/* Left arrow */}
+            <span className="arrow left-arrow" onClick={prevSlide}>&#10094;</span>
+
+            {/* Display the current slide */}
+            {data.map((val, index) => (
+              <div className={index === current ? 'slide active' : 'slide'} key={index}>
+                {index === current && (
+                  <Card image={val.image} title={val.title} desc={val.desc} />
+                )}
+              </div>
+            ))}
+
+            {/* Right arrow */}
+            <span className="arrow right-arrow" onClick={nextSlide}>&#10095;</span>
           </div>
         </div>
       </section>

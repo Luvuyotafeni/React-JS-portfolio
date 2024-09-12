@@ -93,6 +93,57 @@
 .icon{
   font-size: xx-large;
 }
+.carousel-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Center the carousel */
+  width: 60%;
+  height: 100%;
+  overflow: hidden;
+  
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 0.1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 0.5s ease;
+  transform: scale(1.08); /* Optional zoom effect for active slide */
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  /* user-select: none; */
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.Skills .container-top {
+  text-align: center;
+}
+
+.Skills .heading h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
 
 /* Media Queries for Tablet */
 @media only screen and (max-width: 768px) {
@@ -100,13 +151,16 @@
       width: 70%; /* Adjust the width for tablet screens */
     }
   }
-
+ 
 /* Media Queries for Mobile */
 @media only screen and (max-width: 480px) {
   .skills-container{
     width: 100%;
   }
   
+  .row{
+    flex-direction: column;
+  }
     .Skills .skill-box {
       width: 70%; /* Adjust the width for mobile screens */
     }
