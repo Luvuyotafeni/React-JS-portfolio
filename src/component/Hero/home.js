@@ -1,6 +1,6 @@
 import React from 'react'
 import "./home.css"
-import hero from "../pic/IMG_8677.jpg"
+// import hero from "../pic/IMG_8677.jpg"
 import Luvuyo from "../pic/WhatsApp_Image_2024-07-24_at_15.46.18-removebg-preview.png"
 import resume from "./Luvuyos Resume.pdf"
 import { Typewriter } from 'react-simple-typewriter'
@@ -13,7 +13,7 @@ const Home = () => {
           {/* Right section now goes first */}
           <div className='right'>
             <div className='right_img'>
-              <img src={Luvuyo} alt=''></img>
+              <img src={Luvuyo} alt='luvuyo'></img>
             </div>
           </div>
 
@@ -38,9 +38,9 @@ const Home = () => {
             <div className='hero_btn d_flex'>
               <div className='col_1'>
                 <button className='hire btn_shadow'>
-                  <a href={resume}>HIRE ME</a>
+                  <a href={resume} >HIRE ME</a>
                 </button>
-                <div className='button'>
+                <div className='buttons'>
                   <button className='btn_shadow'>
                     <a href='https://www.linkedin.com/in/luvuyo-tafeni-357998230/'><i class='bx bxl-linkedin-square'></i></a>
                   </button>

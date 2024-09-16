@@ -20,12 +20,12 @@
     justify-content: space-around; 
 }
   
-.Skills .skill-box {
+/* .Skills .skill-box {
     width: 30%; 
     height: fit-content;
     margin: 10px; 
     box-sizing: border-box;
-}
+} */
 
 
 
@@ -193,5 +193,9 @@
 
   .carousel-container{
     width:80%;
+  }
+
+  .box{
+    padding: 0;
   }
 }

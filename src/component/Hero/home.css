@@ -246,4 +246,10 @@
     .f_flex{
         flex-direction: column;
     }
+
+    .col_1{
+        width:100px;
+    }
+
+    
 }
