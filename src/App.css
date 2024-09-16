@@ -240,6 +240,11 @@ footer {
     padding: 0 5px;
   }
 
+  .logo {
+    max-width: 40px; /* Adjust the value based on your preference */
+    border-radius: 30px;
+  }
+
   .About .toggle-button {
     font-size: 6px;
     padding: 8px 0;
