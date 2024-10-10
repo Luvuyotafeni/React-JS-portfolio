@@ -10,7 +10,7 @@
 }
 .Skills .box p {
     word-spacing: 1px;
-    transition: 0.5s;
+    transition: 1s;
     font-size: smaller;
 }
 
@@ -96,7 +96,7 @@
 
 .slide {
   opacity: 0;
-  transition-duration: 0.1s ease;
+  transition-duration: 0.5s ease;
 }
 
 .slide.active {

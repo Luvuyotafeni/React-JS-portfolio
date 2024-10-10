@@ -179,6 +179,10 @@ header ul li a:hover {
     width: 100%;
   }
 
+  .bx-x{
+    z-index:999;
+  }
+
   header ul {
     padding-top: 10px;
   }
