@@ -8,7 +8,6 @@ import Hluleka from  "./pics/Hluleka.png"
 import camera from "./pics/camera.png"
 import barbie from "./pics/Screenshot 2024-09-03 133055.png"
 import Finance from "./pics/image.png"
-import PersonalFinancetracker from "./pics/PersonalFinanceTracker.png"
 /* exported as data that will be used and showed at each project container*/
 const data = [
     {
@@ -90,16 +89,7 @@ const data = [
       github: <a href="https://github.com/Luvuyotafeni/expense-tracker"><i class='bx bxl-github'></i></a>,
       link: <a href="https://expense-tracker-oaop.onrender.com/"><i class='bx bx-link'></i></a>,
       desc: "This is a finance tracker project that was created using Vue.js, MongoDb, Node.js and express.js",
-    },
-    {
-      id: 11,
-      image: PersonalFinancetracker,
-      title: "Personal Finance Tracker",
-      github: <a href=""><i class='bx bxl-github'></i></a>,
-      link: <a href="https://personal-finance-tracker-1-kmu7.onrender.com/"><i class='bx bx-link'></i></a>,
-      desc: "This is a finance tracker project that was created using Vue.js, Mysql, JWT and Springboot",
-    },
-    
+    }
 
   ]
   export default data

@@ -9,7 +9,7 @@ import Android from "./skills/android_os_logo_icon_134673_resized.png"
 import php from "./skills/php_resized.png"
 import system from "./skills/system.jpg"
 import Firebase from "./skills/firebase.jpg"
-import git from "./skills/git.png"
+import git from "./skills/GIT.png"
 
 const data = [
     {

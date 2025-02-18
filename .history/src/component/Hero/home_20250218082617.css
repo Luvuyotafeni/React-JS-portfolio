@@ -8,9 +8,6 @@
     font-weight: 100;
     letter-spacing: 2px;
 }
-.col_1{
-    width:200px;
-}
 
 .hero h1 {
     font-size: 35px; /* Decreased font size */
@@ -97,10 +94,6 @@
         margin-top: 200px;
       }
       
-
-      .left_top h1{
-        font-size: x-large;
-    }
     .left_top {
         margin-left: 30px;
         margin-right: 10%;
@@ -155,9 +148,6 @@
         width: 90%;
         height: auto; /* Maintain aspect ratio for small screens */
         margin-right: 10px;
-    }
-    .left_top h1{
-        font-size: large;
     }
     .left_top {
         margin-left: 10px;
@@ -218,9 +208,6 @@
         margin-right: 0;
         margin-bottom: 20px;
 
-    }
-    .left_top h1{
-        font-size: medium;
     }
     .left_top {
         margin-left: 50px;

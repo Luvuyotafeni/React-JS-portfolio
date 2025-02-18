@@ -38,7 +38,7 @@ const Home = () => {
             <div className='hero_btn d_flex'>
               <div className='col_1'>
                 <button className='hire btn_shadow'>
-                  <a href={resume} target='blabk'>HIRE ME</a>
+                  <a href={resume} >HIRE ME</a>
                 </button>
                 <div className='buttons'>
                   <button className='btn_shadow'>
